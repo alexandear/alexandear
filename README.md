@@ -1,20 +1,11 @@
 ### Hi there 👋
 
-- 💻 I'm a backend engineer.
-- 💬 Currently working with Go projects.
-- 📫 Reach me at https://t.me/alexandear.
+- I'm a backend engineer.
+- Currently working with Go projects.
+- Reach me at https://t.me/alexandear.
 
-<!--
-**alexandear/alexandear** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+#### Dev hobbies
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Participated in [Dev Challenge](https://devchallenge.it/). 2nd place in 2019 and 6th in 2020.
+- Completed [Hacktoberfest](https://hacktoberfest.digitalocean.com) in 2016, 2017, 2018, 2019, 2020.
+- Coach at [DjangoGirls](https://djangogirls.org) events in [Kyiv](https://www.facebook.com/djangogirlskyiv/photos/a.1597027043880257/1597028007213494) and [Khmelnytskyi](https://www.facebook.com/uapycon/photos/a.903859323029360/903862623029030) (2015).
