@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-- I'm a backend engineer.
+- I'm a backend engineer with about 6 years of experience.
 - Currently working with Go projects.
 - Reach me at https://t.me/alexandear.
 
