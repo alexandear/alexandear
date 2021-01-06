@@ -1,5 +1,9 @@
 ### Hi there 👋
 
+- 💻 I'm a backend engineer.
+- 💬 Currently working with Go projects.
+- 📫 Reach me at https://t.me/alexandear.
+
 <!--
 **alexandear/alexandear** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
