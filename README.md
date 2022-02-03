@@ -14,3 +14,7 @@
 #### Features
 
 - Projects without lint issues and typos are treasurable for me.
+
+#### Other GitHub profiles
+
+- [Oleksandr Redko (GridDynamics work)](https://github.com/oredko-gd)
