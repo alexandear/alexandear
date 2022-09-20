@@ -1,7 +1,13 @@
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img src="https://github-readme-stats.vercel.app/api?username=alexandear&count_private=true&show_icons=false&theme=dracula" />
+</a>
+
+
 ### Hi there 👋
 
 - I'm a backend engineer with more than 6 years of experience.
 - For most of the time I work with Go language.
+
 
 #### Dev hobbies
 
@@ -18,3 +24,4 @@
 #### Other GitHub profiles
 
 - [Oleksandr Redko (GridDynamics work)](https://github.com/oredko-gd)
+
