@@ -17,6 +17,11 @@
 - A coach at [DjangoGirls](https://djangogirls.org) events in [Kyiv](https://www.facebook.com/djangogirlskyiv/photos/a.1597027043880257/1597028007213494) and [Khmelnytskyi](https://www.facebook.com/uapycon/photos/a.903859323029360/903862623029030) (2015).
 - Like to explore design and vulnarabilities in different APIs. E.g., [Tinder](https://smartass.ua/), [Nike](https://www.nike.com/), [Smartass](https://smartass.ua/), [Bikenow](https://bikenow.com.ua/).
 
+#### Life hobbies :runner:
+
+- Trail and road running, 2:59 marathoner. My Strava [profile](https://www.strava.com/athletes/23735367).
+- Supporting [Telegram bot](https://github.com/vm-devr/strava-telegram-bot) for [Gutsul Running Club](https://gutsulrunning.club/). Created my own Final Surge training [bot](https://github.com/alexandear/final-surge-bot).
+
 #### GitHub profiles :octocat:
 
 - [GridDynamics's work profile](https://github.com/oredko-gd)
