@@ -11,7 +11,7 @@
 
 #### Dev hobbies :computer:
 
-- Contributing to Open Source projects. E.g., [golangci-lint](https://github.com/golangci/golangci-lint), [Learn Git branching](https://learngitbranching.js.org/).
+- Contributing to Open Source projects: [golang/mod](https://github.com/golang/mod), [go-delve](https://github.com/go-delve/delve), [golangci-lint](https://github.com/golangci/golangci-lint), [psake](https://github.com/psake/psake), [NuGetGallery](https://github.com/NuGet/NuGetGallery), [Learn Git branching](https://github.com/pcottle/learnGitBranching) and many others.
 - Have been participated in [Dev Challenge](https://devchallenge.it/). Took 2nd place in 2019 and 6th in 2020.
 - Successfully completed [Hacktoberfest](https://hacktoberfest.com) in 2016, 2017, 2018, 2019, 2020, 2021, 2022.
 - A coach at [DjangoGirls](https://djangogirls.org) events in [Kyiv](https://www.facebook.com/djangogirlskyiv/photos/a.1597027043880257/1597028007213494) and [Khmelnytskyi](https://www.facebook.com/uapycon/photos/a.903859323029360/903862623029030) (2015).
