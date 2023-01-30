@@ -7,6 +7,7 @@ import (
 	"os"
 	"sort"
 	"strings"
+	"time"
 
 	"github.com/shurcooL/githubv4"
 	"golang.org/x/oauth2"
@@ -108,6 +109,10 @@ func main() {
 	}()
 
 	_, _ = contribFile.WriteString(`# Open Source Projects I've Ever Contributed
+
+`)
+	_, _ = contribFile.WriteString(fmt.Sprintf(" _Updated %s_", time.Now().UTC().Format("_2 Jan 2006 15:04")))
+	_, _ = contribFile.WriteString(`
 
 The list of projects (with stars):
 
