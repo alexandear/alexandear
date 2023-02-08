@@ -21,39 +21,6 @@ var additionalContribRepositories = []string{
 	"protocolbuffers/protobuf-go", // https://go.googlesource.com/protobuf
 }
 
-type edgeComment struct {
-	Node struct {
-		Body githubv4.String
-	}
-}
-
-type edgePullRequest struct {
-	Node struct {
-		Repository struct {
-			NameWithOwner  githubv4.String
-			StargazerCount githubv4.Int
-		}
-		Comments struct {
-			Edges []edgeComment
-		} `graphql:"comments(last:1)"`
-		Merged githubv4.Boolean
-		Closed githubv4.Boolean
-	}
-}
-
-var queryPullRequest struct {
-	Viewer struct {
-		PullRequests struct {
-			PageInfo struct {
-				EndCursor   githubv4.String
-				HasNextPage bool
-			}
-			TotalCount githubv4.Int
-			Edges      []edgePullRequest
-		} `graphql:"pullRequests(states: [MERGED, CLOSED], orderBy:{field: CREATED_AT, direction: ASC}, first:100, after: $after)"`
-	}
-}
-
 type repository struct {
 	OwnerName string
 	StarCount int
@@ -147,6 +114,26 @@ The list of projects (with stars):
 	}
 }
 
+type edgeComment struct {
+	Node struct {
+		Body githubv4.String
+	}
+}
+
+type edgePullRequest struct {
+	Node struct {
+		Repository struct {
+			NameWithOwner  githubv4.String
+			StargazerCount githubv4.Int
+		}
+		Comments struct {
+			Edges []edgeComment
+		} `graphql:"comments(last:1)"`
+		Merged githubv4.Boolean
+		Closed githubv4.Boolean
+	}
+}
+
 func PullRequests(ctx context.Context, client *githubv4.Client) ([]edgePullRequest, error) {
 	var pullRequests []edgePullRequest
 	variables := map[string]any{
@@ -154,6 +141,19 @@ func PullRequests(ctx context.Context, client *githubv4.Client) ([]edgePullReque
 	}
 
 	for {
+		var queryPullRequest struct {
+			Viewer struct {
+				PullRequests struct {
+					PageInfo struct {
+						EndCursor   githubv4.String
+						HasNextPage bool
+					}
+					TotalCount githubv4.Int
+					Edges      []edgePullRequest
+				} `graphql:"pullRequests(states: [MERGED, CLOSED], orderBy:{field: CREATED_AT, direction: ASC}, first:100, after: $after)"`
+			}
+		}
+
 		if err := client.Query(ctx, &queryPullRequest, variables); err != nil {
 			return nil, fmt.Errorf("query: %w", err)
 		}
