@@ -15,6 +15,12 @@ import (
 
 //go:generate go run gen.go
 
+// additionalContribRepositories holds GitHub's 'owner/name' of contributed repositories that have mirrors on GitHub
+// but accept pull requests in another way, e.g. through Gerrit Code Review.
+var additionalContribRepositories = []string{
+	"protocolbuffers/protobuf-go", // https://go.googlesource.com/protobuf
+}
+
 type edgeComment struct {
 	Node struct {
 		Body githubv4.String
@@ -73,23 +79,32 @@ func main() {
 
 	repositoryStars := map[string]int{}
 	for _, pr := range allPullRequests {
-		nameOwner := string(pr.Node.Repository.NameWithOwner)
-		if ownRepo(nameOwner) {
-			log.Printf("Skipping own repo: %s\n", nameOwner)
+		ownerName := string(pr.Node.Repository.NameWithOwner)
+		if ownRepo(ownerName) {
+			log.Printf("Skipping own repo: %s\n", ownerName)
 			continue
 		}
 		if !merged(pr) {
-			log.Printf("Skipping not merged repo: %s\n", nameOwner)
+			log.Printf("Skipping not merged repo: %s\n", ownerName)
 			continue
 		}
 
-		repositoryStars[nameOwner] = int(pr.Node.Repository.StargazerCount)
+		repositoryStars[ownerName] = int(pr.Node.Repository.StargazerCount)
+	}
+
+	for _, ownerName := range additionalContribRepositories {
+		starsCount, err := RepositoryStarsCount(context.Background(), client, ownerName)
+		if err != nil {
+			log.Printf("Failed to get repository %q stars: %v", ownerName, err)
+			starsCount = 1000
+		}
+		repositoryStars[ownerName] = starsCount
 	}
 
 	repositories := make([]repository, 0, len(repositoryStars))
-	for repo, star := range repositoryStars {
+	for ownerName, star := range repositoryStars {
 		repositories = append(repositories, repository{
-			OwnerName: repo,
+			OwnerName: ownerName,
 			StarCount: star,
 		})
 	}
@@ -127,7 +142,8 @@ The list of projects (with stars):
 
 `)
 	for _, repo := range repositories {
-		_, _ = contribFile.WriteString(fmt.Sprintf("* [%s](https://github.com/%s) (%d)\n", repo.OwnerName, repo.OwnerName, repo.StarCount))
+		line := fmt.Sprintf("* [%s](https://github.com/%s) (%d)\n", repo.OwnerName, repo.OwnerName, repo.StarCount)
+		_, _ = contribFile.WriteString(line)
 	}
 }
 
@@ -151,9 +167,34 @@ func PullRequests(ctx context.Context, client *githubv4.Client) ([]edgePullReque
 	return pullRequests, nil
 }
 
+func RepositoryStarsCount(ctx context.Context, client *githubv4.Client, ownerName string) (int, error) {
+	spl := strings.Split(ownerName, "/")
+	if len(spl) != 2 {
+		return 0, fmt.Errorf("repo %s must have format 'owner/name'", ownerName)
+	}
+	owner, name := spl[0], spl[1]
+
+	variables := map[string]any{
+		"owner": githubv4.String(owner),
+		"name":  githubv4.String(name),
+	}
+
+	var queryRepository struct {
+		Repository struct {
+			StargazerCount githubv4.Int
+		} `graphql:"repository(owner: $owner, name: $name)"`
+	}
+
+	if err := client.Query(ctx, &queryRepository, variables); err != nil {
+		return 0, fmt.Errorf("query: %w", err)
+	}
+
+	return int(queryRepository.Repository.StargazerCount), nil
+}
+
 // ownRepo returns true if merged to my github.com/alexandear account.
-func ownRepo(nameOwner string) bool {
-	return strings.HasPrefix(nameOwner, "alexandear/")
+func ownRepo(ownerName string) bool {
+	return strings.HasPrefix(ownerName, "alexandear/")
 }
 
 func merged(pr edgePullRequest) bool {
