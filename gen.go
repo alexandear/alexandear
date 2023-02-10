@@ -105,11 +105,11 @@ GITHUB_TOKEN=<YOUR_TOKEN> go generate ./...
 	_, _ = contribFile.WriteString(fmt.Sprintf(" _Updated %s_", time.Now().UTC().Format("_2 Jan 2006 15:04")))
 	_, _ = contribFile.WriteString(`
 
-The list of projects (with stars):
+The list of projects sorted by stars:
 
 `)
 	for _, repo := range repositories {
-		line := fmt.Sprintf("* [%s](https://github.com/%s) (%d)\n", repo.OwnerName, repo.OwnerName, repo.StarCount)
+		line := fmt.Sprintf("* [%s](https://github.com/%s)\n", repo.OwnerName, repo.OwnerName)
 		_, _ = contribFile.WriteString(line)
 	}
 }
