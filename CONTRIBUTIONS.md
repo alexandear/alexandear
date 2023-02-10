@@ -7,7 +7,7 @@ GITHUB_TOKEN=<YOUR_TOKEN> go generate ./...
 
 # Open Source Projects I've Ever Contributed
 
- _Updated  8 Feb 2023 12:22_
+ _Updated 10 Feb 2023 09:37_
 
 The list of projects sorted by stars:
 
@@ -19,6 +19,7 @@ The list of projects sorted by stars:
 * [pcottle/learnGitBranching](https://github.com/pcottle/learnGitBranching)
 * [go-delve/delve](https://github.com/go-delve/delve)
 * [quii/learn-go-with-tests](https://github.com/quii/learn-go-with-tests)
+* [valyala/fasthttp](https://github.com/valyala/fasthttp)
 * [notepad-plus-plus/notepad-plus-plus](https://github.com/notepad-plus-plus/notepad-plus-plus)
 * [golangci/golangci-lint](https://github.com/golangci/golangci-lint)
 * [golang/protobuf](https://github.com/golang/protobuf)
