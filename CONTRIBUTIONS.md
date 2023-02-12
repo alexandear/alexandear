@@ -7,7 +7,7 @@ GITHUB_TOKEN=<YOUR_TOKEN> go generate ./...
 
 # Open Source Projects I've Ever Contributed
 
- _Updated 10 Feb 2023 09:37_
+ _Updated 12 Feb 2023 14:52_
 
 The list of projects sorted by stars:
 
@@ -68,8 +68,8 @@ The list of projects sorted by stars:
 * [JetBrains/resharper-rider-samples](https://github.com/JetBrains/resharper-rider-samples)
 * [golang/mod](https://github.com/golang/mod)
 * [vladimirvivien/go4vl](https://github.com/vladimirvivien/go4vl)
-* [go-openapi/swag](https://github.com/go-openapi/swag)
 * [mymmrac/telego](https://github.com/mymmrac/telego)
+* [go-openapi/swag](https://github.com/go-openapi/swag)
 * [hellofresh/goengine](https://github.com/hellofresh/goengine)
 * [Tapadoo/TCSlackNotifierPlugin](https://github.com/Tapadoo/TCSlackNotifierPlugin)
 * [alwindoss/morse](https://github.com/alwindoss/morse)
