@@ -11,13 +11,21 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
     steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-go@v3
+        with:
+          go-version: 1.20.x
+
+      - run: go generate ./...
+
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          output_action: commit
-          committer_branch: main
-          committer_message: "Update metrics"
+          output_action: none
 
           # Options
           user: alexandear
@@ -30,3 +38,11 @@ jobs:
           plugin_notable_from: all
           plugin_notable_repositories: yes
           plugin_notable_types: commit
+
+      - run: sudo mv /metrics_renders/* ./
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update metrics and CONTRIBUTIONS"
+          branch: main
+          file_pattern: "github-metrics.svg CONTRIBUTIONS.md"
