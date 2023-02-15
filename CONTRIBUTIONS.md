@@ -7,7 +7,7 @@ GITHUB_TOKEN=<YOUR_TOKEN> go generate ./...
 
 # Open Source Projects I've Ever Contributed
 
- _Updated 13 Feb 2023 06:26_
+ _Updated 15 Feb 2023 12:31_
 
 The list of projects sorted by stars:
 
@@ -26,6 +26,7 @@ The list of projects sorted by stars:
 * [chromedp/chromedp](https://github.com/chromedp/chromedp)
 * [twpayne/chezmoi](https://github.com/twpayne/chezmoi)
 * [go-swagger/go-swagger](https://github.com/go-swagger/go-swagger)
+* [VictoriaMetrics/VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics)
 * [awsdocs/aws-doc-sdk-examples](https://github.com/awsdocs/aws-doc-sdk-examples)
 * [gitextensions/gitextensions](https://github.com/gitextensions/gitextensions)
 * [golang/tools](https://github.com/golang/tools)
@@ -54,6 +55,7 @@ The list of projects sorted by stars:
 * [chromedp/examples](https://github.com/chromedp/examples)
 * [microsoft/Multiverso](https://github.com/microsoft/Multiverso)
 * [broidHQ/integrations](https://github.com/broidHQ/integrations)
+* [streetsidesoftware/cspell](https://github.com/streetsidesoftware/cspell)
 * [golang/text](https://github.com/golang/text)
 * [smarkets/marge-bot](https://github.com/smarkets/marge-bot)
 * [stretchr/objx](https://github.com/stretchr/objx)
@@ -76,6 +78,7 @@ The list of projects sorted by stars:
 * [SPSCommerce/sps-api-standards](https://github.com/SPSCommerce/sps-api-standards)
 * [go-openapi/errors](https://github.com/go-openapi/errors)
 * [JetBrains/teamcity-documentation](https://github.com/JetBrains/teamcity-documentation)
+* [bep/golibsass](https://github.com/bep/golibsass)
 * [vtopc/go-monobank](https://github.com/vtopc/go-monobank)
 * [Nicologies/usermapping](https://github.com/Nicologies/usermapping)
 * [Thieum/ChocolateyPackages](https://github.com/Thieum/ChocolateyPackages)
