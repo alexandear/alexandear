@@ -7,7 +7,7 @@ GITHUB_TOKEN=<YOUR_TOKEN> go generate ./...
 
 # Open Source Projects I've Ever Contributed
 
- _Updated 15 Feb 2023 12:31_
+ _Updated 18 Feb 2023 12:30_
 
 The list of projects sorted by stars:
 
@@ -49,6 +49,7 @@ The list of projects sorted by stars:
 * [PowerShell/PSScriptAnalyzer](https://github.com/PowerShell/PSScriptAnalyzer)
 * [psake/psake](https://github.com/psake/psake)
 * [NuGet/NuGetGallery](https://github.com/NuGet/NuGetGallery)
+* [lestrrat-go/jwx](https://github.com/lestrrat-go/jwx)
 * [DjangoGirls/tutorial](https://github.com/DjangoGirls/tutorial)
 * [digitalocean/godo](https://github.com/digitalocean/godo)
 * [njpatel/grpcc](https://github.com/njpatel/grpcc)
@@ -59,6 +60,7 @@ The list of projects sorted by stars:
 * [golang/text](https://github.com/golang/text)
 * [smarkets/marge-bot](https://github.com/smarkets/marge-bot)
 * [stretchr/objx](https://github.com/stretchr/objx)
+* [golang/build](https://github.com/golang/build)
 * [golang/vulndb](https://github.com/golang/vulndb)
 * [Caphyon/clang-power-tools](https://github.com/Caphyon/clang-power-tools)
 * [gramework/gramework](https://github.com/gramework/gramework)
