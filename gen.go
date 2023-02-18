@@ -19,6 +19,7 @@ import (
 // but accept pull requests in another way, e.g. through Gerrit Code Review.
 var additionalContribRepositories = []string{
 	"protocolbuffers/protobuf-go", // https://go.googlesource.com/protobuf
+	"golang/build",                // https://go.googlesource.com/build
 }
 
 type repository struct {
