@@ -7,7 +7,7 @@ GITHUB_TOKEN=<YOUR_TOKEN> go generate ./...
 
 # Open Source Projects I've Ever Contributed
 
- _Updated 20 Feb 2023 06:26_
+ _Updated 20 Feb 2023 09:34_
 
 The list of projects sorted by stars:
 
@@ -38,6 +38,7 @@ The list of projects sorted by stars:
 * [go-telegram-bot-api/telegram-bot-api](https://github.com/go-telegram-bot-api/telegram-bot-api)
 * [turanszkij/WickedEngine](https://github.com/turanszkij/WickedEngine)
 * [cake-build/cake](https://github.com/cake-build/cake)
+* [weaviate/weaviate](https://github.com/weaviate/weaviate)
 * [caarlos0/env](https://github.com/caarlos0/env)
 * [digitalocean/doctl](https://github.com/digitalocean/doctl)
 * [rubenv/sql-migrate](https://github.com/rubenv/sql-migrate)
