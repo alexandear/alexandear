@@ -7,7 +7,7 @@ GITHUB_TOKEN=<YOUR_TOKEN> go generate ./...
 
 # Open Source Projects I've Ever Contributed
 
- _Updated 18 Feb 2023 12:30_
+ _Updated 20 Feb 2023 06:26_
 
 The list of projects sorted by stars:
 
@@ -44,6 +44,7 @@ The list of projects sorted by stars:
 * [golang/net](https://github.com/golang/net)
 * [getfider/fider](https://github.com/getfider/fider)
 * [protocolbuffers/protobuf-go](https://github.com/protocolbuffers/protobuf-go)
+* [kisielk/errcheck](https://github.com/kisielk/errcheck)
 * [xanzy/go-gitlab](https://github.com/xanzy/go-gitlab)
 * [getkin/kin-openapi](https://github.com/getkin/kin-openapi)
 * [PowerShell/PSScriptAnalyzer](https://github.com/PowerShell/PSScriptAnalyzer)
