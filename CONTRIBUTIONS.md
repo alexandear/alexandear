@@ -7,7 +7,7 @@ GITHUB_TOKEN=<YOUR_TOKEN> go generate ./...
 
 # Open Source Projects I've Ever Contributed
 
- _Updated 22 Feb 2023 19:24_
+ _Updated 27 Feb 2023 06:27_
 
 The list of projects sorted by stars:
 
@@ -37,8 +37,8 @@ The list of projects sorted by stars:
 * [danmar/cppcheck](https://github.com/danmar/cppcheck)
 * [go-telegram-bot-api/telegram-bot-api](https://github.com/go-telegram-bot-api/telegram-bot-api)
 * [turanszkij/WickedEngine](https://github.com/turanszkij/WickedEngine)
-* [cake-build/cake](https://github.com/cake-build/cake)
 * [weaviate/weaviate](https://github.com/weaviate/weaviate)
+* [cake-build/cake](https://github.com/cake-build/cake)
 * [caarlos0/env](https://github.com/caarlos0/env)
 * [digitalocean/doctl](https://github.com/digitalocean/doctl)
 * [rubenv/sql-migrate](https://github.com/rubenv/sql-migrate)
@@ -80,6 +80,7 @@ The list of projects sorted by stars:
 * [hellofresh/goengine](https://github.com/hellofresh/goengine)
 * [Tapadoo/TCSlackNotifierPlugin](https://github.com/Tapadoo/TCSlackNotifierPlugin)
 * [alwindoss/morse](https://github.com/alwindoss/morse)
+* [ashanbrown/forbidigo](https://github.com/ashanbrown/forbidigo)
 * [SPSCommerce/sps-api-standards](https://github.com/SPSCommerce/sps-api-standards)
 * [go-openapi/errors](https://github.com/go-openapi/errors)
 * [JetBrains/teamcity-documentation](https://github.com/JetBrains/teamcity-documentation)
