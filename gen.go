@@ -20,6 +20,7 @@ import (
 var additionalContribRepositories = []string{
 	"protocolbuffers/protobuf-go", // https://go.googlesource.com/protobuf
 	"golang/build",                // https://go.googlesource.com/build
+	"golang/website",              // https://go.googlesource.com/website
 }
 
 type repository struct {
