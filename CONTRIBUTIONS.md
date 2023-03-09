@@ -7,7 +7,7 @@ GITHUB_TOKEN=<YOUR_TOKEN> go generate ./...
 
 # Open Source Projects I've Ever Contributed
 
- _Updated  6 Mar 2023 06:27_
+ _Updated  9 Mar 2023 11:08_
 
 The list of projects sorted by stars:
 
@@ -72,6 +72,7 @@ The list of projects sorted by stars:
 * [hellofresh/health-go](https://github.com/hellofresh/health-go)
 * [PeteGoo/tcSlackBuildNotifier](https://github.com/PeteGoo/tcSlackBuildNotifier)
 * [aerokube/ggr](https://github.com/aerokube/ggr)
+* [golang/website](https://github.com/golang/website)
 * [manifoldco/heighliner](https://github.com/manifoldco/heighliner)
 * [incu6us/goimports-reviser](https://github.com/incu6us/goimports-reviser)
 * [JetBrains/resharper-rider-samples](https://github.com/JetBrains/resharper-rider-samples)
