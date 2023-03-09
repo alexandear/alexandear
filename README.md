@@ -13,7 +13,3 @@
 
 - I enjoy trail and road running, and I have completed a marathon in [2:59](https://www.strava.com/activities/2749444073).
 - I support a [Telegram bot](https://github.com/vm-devr/strava-telegram-bot) for the [Gutsul Running Club](https://gutsulrunning.club/), and I have created my own Final Surge training [bot](https://github.com/alexandear/final-surge-bot).
-
-#### GitHub Profiles :octocat:
-
-- [GridDynamics's work profile](https://github.com/oredko-gd)
