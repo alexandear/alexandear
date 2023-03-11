@@ -7,7 +7,6 @@ import (
 	"os"
 	"sort"
 	"strings"
-	"time"
 
 	"github.com/shurcooL/githubv4"
 	"golang.org/x/oauth2"
@@ -15,17 +14,25 @@ import (
 
 //go:generate go run gen.go
 
-// additionalContribRepositories holds GitHub's 'owner/name' of contributed repositories that have mirrors on GitHub
-// but accept pull requests in another way, e.g. through Gerrit Code Review.
-var additionalContribRepositories = []string{
-	"protocolbuffers/protobuf-go", // https://go.googlesource.com/protobuf
-	"golang/build",                // https://go.googlesource.com/build
-	"golang/website",              // https://go.googlesource.com/website
+// googleSourceGitHub holds mapping of
+// a Go Google Git repository name https://go.googlesource.com/<GoogleSourceRepo>
+// to GitHub owner name https://github.com/<GitHubOwnerName>.
+type googleSourceGitHub struct {
+	GoogleSourceRepo string
+	GitHubOwnerName  string
 }
 
-type repository struct {
-	OwnerName string
-	StarCount int
+// googleGitHubRepos are Go Google Git repositories I have ever contributed to.
+var googleGitHubRepos = []googleSourceGitHub{
+	{"build", "golang/build"},
+	{"go", "golang/go"},
+	{"net", "golang/net"},
+	{"mod", "golang/mod"},
+	{"protobuf", "protocolbuffers/protobuf-go"},
+	{"tools", "golang/tools"},
+	{"text", "golang/text"},
+	{"vulndb", "golang/vulndb"},
+	{"website", "golang/website"},
 }
 
 func main() {
@@ -53,7 +60,7 @@ func main() {
 			log.Printf("Skipping own repo: %s\n", ownerName)
 			continue
 		}
-		if !merged(pr) {
+		if !pr.Node.Merged {
 			log.Printf("Skipping not merged repo: %s\n", ownerName)
 			continue
 		}
@@ -61,13 +68,19 @@ func main() {
 		repositoryStars[ownerName] = int(pr.Node.Repository.StargazerCount)
 	}
 
-	for _, ownerName := range additionalContribRepositories {
+	for _, googleGithub := range googleGitHubRepos {
+		ownerName := googleGithub.GitHubOwnerName
 		starsCount, err := RepositoryStarsCount(context.Background(), client, ownerName)
 		if err != nil {
 			log.Printf("Failed to get repository %q stars: %v", ownerName, err)
 			starsCount = 1000
 		}
 		repositoryStars[ownerName] = starsCount
+	}
+
+	type repository struct {
+		OwnerName string
+		StarCount int
 	}
 
 	repositories := make([]repository, 0, len(repositoryStars))
@@ -101,12 +114,23 @@ GITHUB_TOKEN=<YOUR_TOKEN> go generate ./...
 -->
 
 # Open Source Projects I've Ever Contributed
+`)
+
+	_, _ = contribFile.WriteString(`
+## Go Google Git Repositories
+
+_links pointed to a log with my contributions_
 
 `)
-	_, _ = contribFile.WriteString(fmt.Sprintf(" _Updated %s_", time.Now().UTC().Format("_2 Jan 2006 15:04")))
-	_, _ = contribFile.WriteString(`
+	for _, repo := range googleGitHubRepos {
+		line := fmt.Sprintf("* [%[1]s](https://go.googlesource.com/%[1]s/+log?author=Oleksandr%%20Redko)\n", repo.GoogleSourceRepo)
+		_, _ = contribFile.WriteString(line)
+	}
 
-The list of projects sorted by stars:
+	_, _ = contribFile.WriteString(`
+## GitHub Projects
+
+_sorted by stars descending_
 
 `)
 	for _, repo := range repositories {
@@ -121,13 +145,6 @@ type edgePullRequest struct {
 			NameWithOwner  githubv4.String
 			StargazerCount githubv4.Int
 		}
-		Comments struct {
-			Edges []struct {
-				Node struct {
-					Body githubv4.String
-				}
-			}
-		} `graphql:"comments(last:1)"`
 		Merged githubv4.Boolean
 		Closed githubv4.Boolean
 	}
@@ -194,24 +211,4 @@ func RepositoryStarsCount(ctx context.Context, client *githubv4.Client, ownerNam
 // ownRepo returns true if merged to my github.com/alexandear account.
 func ownRepo(ownerName string) bool {
 	return strings.HasPrefix(ownerName, "alexandear/")
-}
-
-func merged(pr edgePullRequest) bool {
-	return bool(pr.Node.Merged) || mergedToGolang(pr)
-}
-
-// mergedToGolang checks whether closed PR was merged to a repo in "golang" owner.
-// A merged PR to is closed by gopherbot if with the comment
-// "This PR is being closed because golang.org/cl/463098 has been merged."
-func mergedToGolang(pr edgePullRequest) bool {
-	if !strings.HasPrefix(string(pr.Node.Repository.NameWithOwner), "golang/") {
-		return false
-	}
-
-	comments := pr.Node.Comments.Edges
-	if len(comments) == 0 {
-		return false
-	}
-
-	return strings.Contains(string(comments[0].Node.Body), "has been merged")
 }
