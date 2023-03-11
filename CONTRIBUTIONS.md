@@ -7,9 +7,23 @@ GITHUB_TOKEN=<YOUR_TOKEN> go generate ./...
 
 # Open Source Projects I've Ever Contributed
 
- _Updated  9 Mar 2023 19:56_
+## Go Google Git Repositories
 
-The list of projects sorted by stars:
+_links pointed to a log with my contributions_
+
+* [build](https://go.googlesource.com/build/+log?author=Oleksandr%20Redko)
+* [go](https://go.googlesource.com/go/+log?author=Oleksandr%20Redko)
+* [net](https://go.googlesource.com/net/+log?author=Oleksandr%20Redko)
+* [mod](https://go.googlesource.com/mod/+log?author=Oleksandr%20Redko)
+* [protobuf](https://go.googlesource.com/protobuf/+log?author=Oleksandr%20Redko)
+* [tools](https://go.googlesource.com/tools/+log?author=Oleksandr%20Redko)
+* [text](https://go.googlesource.com/text/+log?author=Oleksandr%20Redko)
+* [vulndb](https://go.googlesource.com/vulndb/+log?author=Oleksandr%20Redko)
+* [website](https://go.googlesource.com/website/+log?author=Oleksandr%20Redko)
+
+## GitHub Projects
+
+_sorted by stars descending_
 
 * [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp)
 * [EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books)
@@ -71,8 +85,8 @@ The list of projects sorted by stars:
 * [hellofresh/health-go](https://github.com/hellofresh/health-go)
 * [bvinc/go-sqlite-lite](https://github.com/bvinc/go-sqlite-lite)
 * [PeteGoo/tcSlackBuildNotifier](https://github.com/PeteGoo/tcSlackBuildNotifier)
-* [golang/website](https://github.com/golang/website)
 * [aerokube/ggr](https://github.com/aerokube/ggr)
+* [golang/website](https://github.com/golang/website)
 * [manifoldco/heighliner](https://github.com/manifoldco/heighliner)
 * [incu6us/goimports-reviser](https://github.com/incu6us/goimports-reviser)
 * [JetBrains/resharper-rider-samples](https://github.com/JetBrains/resharper-rider-samples)
