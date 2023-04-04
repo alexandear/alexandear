@@ -35,6 +35,14 @@ var googleGitHubRepos = []googleSourceGitHub{
 	{"website", "golang/website"},
 }
 
+// additionalGitHubRepos holds GitHub repositories I have contributed to with
+// label 'Closed'. Pull requests marked as "Closed" but commits from them moved
+// to repo's main branch. This happens when a main repository is in Gerrit
+// and GitHub is a mirror.
+var additionalGitHubRepos = []string{
+	"cue-lang/cue", // https://review.gerrithub.io/q/project:cue-lang%252Fcue
+}
+
 func main() {
 	token := os.Getenv("GITHUB_TOKEN")
 	if token == "" {
@@ -74,6 +82,15 @@ func main() {
 		if err != nil {
 			log.Printf("Failed to get repository %q stars: %v", ownerName, err)
 			starsCount = 1000
+		}
+		repositoryStars[ownerName] = starsCount
+	}
+
+	for _, ownerName := range additionalGitHubRepos {
+		starsCount, err := RepositoryStarsCount(context.Background(), client, ownerName)
+		if err != nil {
+			log.Printf("Failed to get repository %q stars: %v", ownerName, err)
+			starsCount = 100
 		}
 		repositoryStars[ownerName] = starsCount
 	}
