@@ -113,6 +113,7 @@ _sorted by stars descending_
 * [alwindoss/morse](https://github.com/alwindoss/morse)
 * [SPSCommerce/sps-api-standards](https://github.com/SPSCommerce/sps-api-standards)
 * [go-openapi/errors](https://github.com/go-openapi/errors)
+* [butuzov/mirror](https://github.com/butuzov/mirror)
 * [JetBrains/teamcity-documentation](https://github.com/JetBrains/teamcity-documentation)
 * [bep/golibsass](https://github.com/bep/golibsass)
 * [vtopc/go-monobank](https://github.com/vtopc/go-monobank)
