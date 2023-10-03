@@ -41,6 +41,7 @@ var googleGitHubRepos = []googleSourceGitHub{
 // and GitHub is a mirror.
 var additionalGitHubRepos = []string{
 	"cue-lang/cue", // https://review.gerrithub.io/q/project:cue-lang%252Fcue
+	"cognitedata/cognite-sdk-python",
 }
 
 func main() {
