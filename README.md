@@ -2,6 +2,8 @@
   <img align="center" src="github-metrics.svg" alt="Metrics" width="500">
 </a>
 
+[![Oleksandr Redko profile views](https://u8views.com/api/v1/github/profiles/3228886/views/day-week-month-total-count.svg)](https://u8views.com/github/alexandear)
+
 #### Developer Hobbies :computer:
 
 - I have successfully completed [Hacktoberfest](https://hacktoberfest.com) every year from 2016 to 2023.
