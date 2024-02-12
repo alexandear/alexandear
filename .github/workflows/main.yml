@@ -12,7 +12,8 @@ jobs:
     permissions:
       contents: write
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Scopes: [pull-requests: read]
+      GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -24,7 +25,9 @@ jobs:
 
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # A GitHub personal token is required since this action will fetch data that cannot be accessed through repository-scoped tokens.
+          # Scopes: [public_repo, read:project, read:user]
+          token: ${{ secrets.METRICS_TOKEN }}
           output_action: none
 
           # Options
