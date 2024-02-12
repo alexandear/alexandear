@@ -12,7 +12,7 @@ import (
 	"golang.org/x/oauth2"
 )
 
-//go:generate go run gen.go
+//go:generate go run $GOFILE
 
 // googleSourceGitHub holds mapping of
 // a Go Google Git repository name https://go.googlesource.com/<GoogleSourceRepo>
@@ -47,7 +47,7 @@ var additionalGitHubRepos = []string{
 func main() {
 	token := os.Getenv("GITHUB_TOKEN")
 	if token == "" {
-		log.Fatal("env variable 'GITHUB_TOKEN' must be non-empty")
+		log.Fatal("environment variable 'GITHUB_TOKEN' must be non-empty and has permissions '[pull-requests: read]'")
 	}
 
 	src := oauth2.StaticTokenSource(
@@ -56,7 +56,7 @@ func main() {
 	httpClient := oauth2.NewClient(context.Background(), src)
 	client := githubv4.NewClient(httpClient)
 
-	allPullRequests, err := PullRequests(context.Background(), client)
+	allPullRequests, err := pullRequests(context.Background(), client)
 	if err != nil {
 		log.Fatalf("Failed to get merged pull requests: %v\n", err)
 	}
@@ -79,7 +79,7 @@ func main() {
 
 	for _, googleGithub := range googleGitHubRepos {
 		ownerName := googleGithub.GitHubOwnerName
-		starsCount, err := RepositoryStarsCount(context.Background(), client, ownerName)
+		starsCount, err := repositoryStarsCount(context.Background(), client, ownerName)
 		if err != nil {
 			log.Printf("Failed to get repository %q stars: %v", ownerName, err)
 			starsCount = 1000
@@ -88,7 +88,7 @@ func main() {
 	}
 
 	for _, ownerName := range additionalGitHubRepos {
-		starsCount, err := RepositoryStarsCount(context.Background(), client, ownerName)
+		starsCount, err := repositoryStarsCount(context.Background(), client, ownerName)
 		if err != nil {
 			log.Printf("Failed to get repository %q stars: %v", ownerName, err)
 			starsCount = 100
@@ -168,7 +168,7 @@ type edgePullRequest struct {
 	}
 }
 
-func PullRequests(ctx context.Context, client *githubv4.Client) ([]edgePullRequest, error) {
+func pullRequests(ctx context.Context, client *githubv4.Client) ([]edgePullRequest, error) {
 	var pullRequests []edgePullRequest
 	variables := map[string]any{
 		"after": (*githubv4.String)(nil),
@@ -201,12 +201,11 @@ func PullRequests(ctx context.Context, client *githubv4.Client) ([]edgePullReque
 	return pullRequests, nil
 }
 
-func RepositoryStarsCount(ctx context.Context, client *githubv4.Client, ownerName string) (int, error) {
-	spl := strings.Split(ownerName, "/")
-	if len(spl) != 2 {
+func repositoryStarsCount(ctx context.Context, client *githubv4.Client, ownerName string) (int, error) {
+	owner, name, ok := strings.Cut(ownerName, "/")
+	if !ok || owner == "" || name == "" {
 		return 0, fmt.Errorf("repo %s must have format 'owner/name'", ownerName)
 	}
-	owner, name := spl[0], spl[1]
 
 	variables := map[string]any{
 		"owner": githubv4.String(owner),

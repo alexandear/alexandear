@@ -1,6 +1,6 @@
 module my-contributed-projects
 
-go 1.19
+go 1.22.0
 
 require (
 	github.com/shurcooL/githubv4 v0.0.0-20221229060216-a8d4a561cc93
