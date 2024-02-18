@@ -33,9 +33,7 @@ jobs:
           # Options
           user: alexandear
           template: classic
-          base: header, activity, community, repositories, metadata
-          base_hireable: yes
-          plugin_introduction: yes
+          base: activity, repositories, metadata
           plugin_introduction_title: yes
           plugin_notable: yes
           plugin_notable_from: all
