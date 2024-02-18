@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 	"sort"
 	"strings"
 
@@ -115,7 +116,7 @@ func main() {
 
 	log.Printf("Total contributed projects: %d\n", len(repositories))
 
-	contribFile, err := os.Create("CONTRIBUTIONS.md")
+	contribFile, err := os.Create(filepath.Join("..", "CONTRIBUTIONS.md"))
 	if err != nil {
 		log.Fatalf("Create file: %v", err)
 	}

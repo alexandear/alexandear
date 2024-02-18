@@ -22,6 +22,7 @@ jobs:
           go-version: '1.22.X'
 
       - run: go generate ./...
+        working-directory: ./gencontribs
 
       - uses: lowlighter/metrics@latest
         with:
