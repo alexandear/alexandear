@@ -8,12 +8,17 @@ import (
 	"path/filepath"
 	"sort"
 	"strings"
+	"time"
 
 	"github.com/shurcooL/githubv4"
 	"golang.org/x/oauth2"
 )
 
 //go:generate go run $GOFILE
+
+const (
+	genTimeout = 30 * time.Second
+)
 
 // googleSourceGitHub holds mapping of
 // a Google Git repository name https://*.googlesource.com/<GoogleSourceRepo>
@@ -59,10 +64,13 @@ func main() {
 	src := oauth2.StaticTokenSource(
 		&oauth2.Token{AccessToken: token},
 	)
-	httpClient := oauth2.NewClient(context.Background(), src)
+	ctx, cancel := context.WithTimeout(context.Background(), genTimeout)
+	defer cancel()
+
+	httpClient := oauth2.NewClient(ctx, src)
 	client := githubv4.NewClient(httpClient)
 
-	allPullRequests, err := pullRequests(context.Background(), client)
+	allPullRequests, err := pullRequests(ctx, client)
 	if err != nil {
 		log.Fatalf("Failed to get merged pull requests: %v\n", err)
 	}
@@ -84,7 +92,7 @@ func main() {
 	}
 
 	getStarsCount := func(ownerName string) int {
-		starsCount, err := repositoryStarsCount(context.Background(), client, ownerName)
+		starsCount, err := repositoryStarsCount(ctx, client, ownerName)
 		if err != nil {
 			log.Printf("Failed to get repository %q stars: %v", ownerName, err)
 			return 1000
