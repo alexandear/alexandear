@@ -16,15 +16,16 @@ import (
 //go:generate go run $GOFILE
 
 // googleSourceGitHub holds mapping of
-// a Go Google Git repository name https://go.googlesource.com/<GoogleSourceRepo>
+// a Google Git repository name https://*.googlesource.com/<GoogleSourceRepo>
 // to GitHub owner name https://github.com/<GitHubOwnerName>.
 type googleSourceGitHub struct {
 	GoogleSourceRepo string
 	GitHubOwnerName  string
 }
 
-// googleGitHubRepos are Go Google Git repositories I have ever contributed to.
-var googleGitHubRepos = []googleSourceGitHub{
+// googleGoGitHubRepos are Go Google Git repositories located at https://go.googlesource.com
+// to which I have contributed.
+var googleGoGitHubRepos = []googleSourceGitHub{
 	{"build", "golang/build"},
 	{"go", "golang/go"},
 	{"net", "golang/net"},
@@ -36,12 +37,17 @@ var googleGitHubRepos = []googleSourceGitHub{
 	{"website", "golang/website"},
 }
 
+// googleCodeGitHubRepos are Code Google Git repositories located at https://code.googlesource.com/
+// to which I have contributed.
+var googleCodeGitHubRepos = []googleSourceGitHub{
+	{"re2", "google/re2"},
+}
+
 // additionalGitHubRepos holds GitHub repositories to which I have contributed.
-// The main repository is in Gerrit and GitHub is a mirror.
+// Some of them are not hosted on GitHub, but on Gerrit, and GitHub is a mirror.
 var additionalGitHubRepos = []string{
 	"cue-lang/cue",                   // https://review.gerrithub.io/q/project:cue-lang%252Fcue
 	"cognitedata/cognite-sdk-python", // https://github.com/cognitedata/cognite-sdk-python/pull/1400
-	"google/re2",                     // https://code-review.googlesource.com/q/status:merged+owner:oleksandr.red@gmail.com
 }
 
 func main() {
@@ -77,23 +83,28 @@ func main() {
 		repositoryStars[ownerName] = int(pr.Node.Repository.StargazerCount)
 	}
 
-	for _, googleGithub := range googleGitHubRepos {
-		ownerName := googleGithub.GitHubOwnerName
+	getStarsCount := func(ownerName string) int {
 		starsCount, err := repositoryStarsCount(context.Background(), client, ownerName)
 		if err != nil {
 			log.Printf("Failed to get repository %q stars: %v", ownerName, err)
-			starsCount = 1000
+			return 1000
 		}
-		repositoryStars[ownerName] = starsCount
+		return starsCount
 	}
 
-	for _, ownerName := range additionalGitHubRepos {
-		starsCount, err := repositoryStarsCount(context.Background(), client, ownerName)
-		if err != nil {
-			log.Printf("Failed to get repository %q stars: %v", ownerName, err)
-			starsCount = 100
+	fillGoogleStarsCount := func(googleRepos []googleSourceGitHub) {
+		for _, googleGithub := range googleRepos {
+			ownerName := googleGithub.GitHubOwnerName
+			getStarsCount(ownerName)
+			repositoryStars[ownerName] = getStarsCount(ownerName)
 		}
-		repositoryStars[ownerName] = starsCount
+	}
+
+	fillGoogleStarsCount(googleGoGitHubRepos)
+	fillGoogleStarsCount(googleCodeGitHubRepos)
+
+	for _, ownerName := range additionalGitHubRepos {
+		repositoryStars[ownerName] = getStarsCount(ownerName)
 	}
 
 	type repository struct {
@@ -135,13 +146,24 @@ GITHUB_TOKEN=<YOUR_TOKEN> go generate ./...
 `)
 
 	_, _ = contribFile.WriteString(`
-## Go Google Git Repositories
+## Google Go Git Repositories
 
 _links pointed to a log with my contributions_
 
 `)
-	for _, repo := range googleGitHubRepos {
+	for _, repo := range googleGoGitHubRepos {
 		line := fmt.Sprintf("* [%[1]s](https://go.googlesource.com/%[1]s/+log?author=Oleksandr%%20Redko)\n", repo.GoogleSourceRepo)
+		_, _ = contribFile.WriteString(line)
+	}
+
+	_, _ = contribFile.WriteString(`
+## Google Code Git Repositories
+
+_links pointed to a log with my contributions_
+
+`)
+	for _, repo := range googleCodeGitHubRepos {
+		line := fmt.Sprintf("* [%[1]s](https://code.googlesource.com/%[1]s/+log?author=Oleksandr%%20Redko)\n", repo.GoogleSourceRepo)
 		_, _ = contribFile.WriteString(line)
 	}
 
