@@ -36,13 +36,12 @@ var googleGitHubRepos = []googleSourceGitHub{
 	{"website", "golang/website"},
 }
 
-// additionalGitHubRepos holds GitHub repositories I have contributed to with
-// label 'Closed'. Pull requests marked as "Closed" but commits from them moved
-// to repo's main branch. This happens when a main repository is in Gerrit
-// and GitHub is a mirror.
+// additionalGitHubRepos holds GitHub repositories to which I have contributed.
+// The main repository is in Gerrit and GitHub is a mirror.
 var additionalGitHubRepos = []string{
-	"cue-lang/cue", // https://review.gerrithub.io/q/project:cue-lang%252Fcue
-	"cognitedata/cognite-sdk-python",
+	"cue-lang/cue",                   // https://review.gerrithub.io/q/project:cue-lang%252Fcue
+	"cognitedata/cognite-sdk-python", // https://github.com/cognitedata/cognite-sdk-python/pull/1400
+	"google/re2",                     // https://code-review.googlesource.com/q/status:merged+owner:oleksandr.red@gmail.com
 }
 
 func main() {
@@ -165,7 +164,6 @@ type edgePullRequest struct {
 			StargazerCount githubv4.Int
 		}
 		Merged githubv4.Boolean
-		Closed githubv4.Boolean
 	}
 }
 
