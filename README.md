@@ -4,7 +4,7 @@
 
 [![Oleksandr Redko profile views](https://u8views.com/api/v1/github/profiles/3228886/views/day-week-month-total-count.svg)](https://u8views.com/github/alexandear)
 
-I'm among the [Top 30](https://github.com/gayanvoice/top-github-users/blob/82b064b546c88ca00e6a1864b183a20f9803856c/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
+I'm among the [Top 30](https://github.com/gayanvoice/top-github-users/blob/6926751576ae1ca9da77ed8743c0b4bd78a6a79b/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
 
 <a href="CONTRIBUTIONS.md">
   <img align="center" src="github-metrics.svg" alt="Metrics" width="500">
