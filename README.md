@@ -19,4 +19,3 @@ I'm among the [Top 30](https://github.com/gayanvoice/top-github-users/blob/69267
 #### Life Hobbies :runner:
 
 - I enjoy trail and road running, and I completed a marathon in [2:59](https://www.strava.com/activities/2749444073).
-- I support a [Telegram bot](https://github.com/vm-devr/strava-telegram-bot) for the [Gutsul Running Club](https://gutsulrunning.club/), and I have created my own Final Surge training [bot](https://github.com/alexandear/final-surge-bot).
