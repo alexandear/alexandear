@@ -37,6 +37,7 @@ jobs:
           base: activity, repositories, metadata
           plugin_introduction_title: yes
           plugin_notable: yes
+          plugin_notable_filter: stars:>10000 forks:>1000
           plugin_notable_from: all
           plugin_notable_repositories: yes
           plugin_notable_types: commit
