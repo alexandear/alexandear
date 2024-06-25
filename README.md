@@ -6,6 +6,13 @@
 
 I'm among the [Top 30](https://github.com/gayanvoice/top-github-users/blob/6926751576ae1ca9da77ed8743c0b4bd78a6a79b/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
 
+I have contributed to the [Go language and tools](CONTRIBUTIONS.md#google-go-git-repositories),
+[golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear),
+[delve](https://github.com/go-delve/delve/commits?author=alexandear),
+[lima](https://github.com/lima-vm/lima/commits?author=alexandear),
+and other popular repositories.
+See [CONTRIBUTIONS.md](./CONTRIBUTIONS.md) to view all of my contributions.
+
 <a href="CONTRIBUTIONS.md">
   <img align="center" src="github-metrics.svg" alt="Metrics" width="500">
 </a>
