@@ -40,6 +40,7 @@ var googleGoGitHubRepos = []googleSourceGitHub{
 	{"text", "golang/text"},
 	{"vulndb", "golang/vulndb"},
 	{"website", "golang/website"},
+	{"wiki", "golang/wiki"},
 }
 
 // googleCodeGitHubRepos are Code Google Git repositories located at https://code.googlesource.com/
