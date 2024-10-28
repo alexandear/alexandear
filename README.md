@@ -4,7 +4,7 @@
 
 [![Oleksandr Redko profile views](https://u8views.com/api/v1/github/profiles/3228886/views/day-week-month-total-count.svg)](https://u8views.com/github/alexandear)
 
-I'm among the [Top 30](https://github.com/gayanvoice/top-github-users/blob/6926751576ae1ca9da77ed8743c0b4bd78a6a79b/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
+I'm among the [Top 25](https://github.com/gayanvoice/top-github-users/blob/c06af2fbac5a047eb791156204a952984775863e/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
 
 I have contributed to the [Go language and tools](CONTRIBUTIONS.md#google-go-git-repositories),
 [golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear),
