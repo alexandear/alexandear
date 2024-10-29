@@ -19,7 +19,7 @@ See [CONTRIBUTIONS.md](./CONTRIBUTIONS.md) to view all of my contributions.
 
 #### Developer Hobbies :computer:
 
-- I have successfully completed [Hacktoberfest](https://hacktoberfest.com) every year from 2016 to 2023.
+- I have successfully completed [Hacktoberfest](https://hacktoberfest.com) every year from 2016 to 2024.
 - I have participated in [Dev Challenge](https://devchallenge.it/), and I took 2nd place in 2019 and 6th in 2020.
 - I have coached at [DjangoGirls](https://djangogirls.org) events in [Kyiv](https://www.facebook.com/djangogirlskyiv/photos/a.1597027043880257/1597028007213494) and [Khmelnytskyi](https://www.facebook.com/uapycon/photos/a.903859323029360/903862623029030) in 2015.
 
