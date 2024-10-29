@@ -26,4 +26,5 @@ See [CONTRIBUTIONS.md](./CONTRIBUTIONS.md) to view all of my contributions.
 
 #### Life Hobbies :runner:
 
-- I enjoy trail and road running, and I completed a marathon in [2:59](https://www.strava.com/activities/2749444073).
+- I am passionate about road and gravel cycling.
+- I enjoy trail and road running, having completed a marathon in an impressive [2:59](https://www.strava.com/activities/2749444073).
