@@ -3,7 +3,7 @@ module my-contributed-projects
 go 1.22.0
 
 require (
-	github.com/shurcooL/githubv4 v0.0.0-20221229060216-a8d4a561cc93
+	github.com/shurcooL/githubv4 v0.0.0-20240727222349-48295856cce7
 	golang.org/x/oauth2 v0.17.0
 )
 
