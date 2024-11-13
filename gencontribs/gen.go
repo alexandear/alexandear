@@ -60,7 +60,7 @@ var additionalGitHubRepos = []string{
 func main() {
 	token := os.Getenv("GITHUB_TOKEN")
 	if token == "" {
-		log.Print("environment variable 'GITHUB_TOKEN' must be non-empty and has permissions '[pull-requests: read]'")
+		log.Panic("environment variable 'GITHUB_TOKEN' must be non-empty and has permissions '[pull-requests: read]'")
 	}
 
 	src := oauth2.StaticTokenSource(
