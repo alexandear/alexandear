@@ -184,7 +184,7 @@ _sorted by stars descending_
 
 `)
 	for _, repo := range repositories {
-		line := fmt.Sprintf("* [%[1]s](https://github.com/%[1]s)\n", repo.OwnerName)
+		line := fmt.Sprintf("* [%[1]s](https://github.com/%[1]s/commits?author=alexandear)\n", repo.OwnerName)
 		mustWrite(contribFile, line)
 	}
 }
