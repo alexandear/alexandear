@@ -6,12 +6,16 @@
 
 I'm among the [Top 25](https://github.com/gayanvoice/top-github-users/blob/c06af2fbac5a047eb791156204a952984775863e/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
 
+I love open source and follow the Boy Scout rule, fixing issues I encounter to help others.
 I have contributed to the [Go language and tools](CONTRIBUTIONS.md#google-go-git-repositories),
-[golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear),
-[delve](https://github.com/go-delve/delve/commits?author=alexandear),
-[lima](https://github.com/lima-vm/lima/commits?author=alexandear),
-and other popular repositories.
-See [CONTRIBUTIONS.md](./CONTRIBUTIONS.md) to view all of my contributions.
+[virtual machine launcher Lima](https://github.com/lima-vm/lima/commits?author=alexandear),
+[linters runner Golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear),
+[debugger Delve](https://github.com/go-delve/delve/commits?author=alexandear),
+[OpenAPI generator oapi-codegen](https://github.com/oapi-codegen/oapi-codegen/commits?author=alexandear),
+and other popular projects.
+See [CONTRIBUTIONS](./CONTRIBUTIONS.md) to view all of my contributions.
+
+I love open source and follow the Boy Scout rule, fixing issues I encounter to help others. I have contributed to the [Go language and tools](CONTRIBUTIONS.md#google-go-git-repositories), [virtual machine launcher Lima](https://github.com/lima-vm/lima/commits?author=alexandear), [linters runner golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear), [debugger Delve](https://github.com/go-delve/delve/commits?author=alexandear), and other popular repositories. See [CONTRIBUTIONS.md](./CONTRIBUTIONS.md) to view all of my contributions.
 
 <a href="CONTRIBUTIONS.md">
   <img align="center" src="github-metrics.svg" alt="Metrics" width="500">
