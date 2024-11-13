@@ -1,4 +1,4 @@
-module my-contributed-projects
+module github.com/alexandear/alexandear/gencontribs
 
 go 1.22.0
 
