@@ -4,7 +4,7 @@
 
 [![Oleksandr Redko profile views](https://u8views.com/api/v1/github/profiles/3228886/views/day-week-month-total-count.svg)](https://u8views.com/github/alexandear)
 
-I'm among the [Top 25](https://github.com/gayanvoice/top-github-users/blob/c06af2fbac5a047eb791156204a952984775863e/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
+I'm among the [Top 15](https://github.com/gayanvoice/top-github-users/blob/f6c5e3d93f8b07ae363938e540bfbcf1b80e0e7f/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
 
 I love open source and follow the Boy Scout rule, fixing issues I encounter to help others.
 I have contributed to the [Go language and tools](./CONTRIBUTIONS.md#google-go-git-repositories),
