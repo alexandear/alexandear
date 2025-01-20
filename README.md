@@ -13,7 +13,7 @@ debugger [Delve](https://github.com/go-delve/delve/commits?author=alexandear),
 OpenAPI generator [oapi-codegen](https://github.com/oapi-codegen/oapi-codegen/commits?author=alexandear),
 and other popular projects.
 
-I'm among the [Top 15](https://github.com/gayanvoice/top-github-users/blob/f6c5e3d93f8b07ae363938e540bfbcf1b80e0e7f/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
+I'm among the [Top 15](https://github.com/gayanvoice/top-github-users/blob/6297f44bc8797fbf581b8670460501db98d9b991/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
 See [CONTRIBUTIONS](./CONTRIBUTIONS.md) to view all of my contributions.
 
 <a href="CONTRIBUTIONS.md">
