@@ -1,11 +1,12 @@
 package main
 
 import (
+	"cmp"
 	"context"
 	"fmt"
 	"io"
 	"log"
-	"sort"
+	"slices"
 	"strings"
 )
 
@@ -109,14 +110,12 @@ func Contributions(ctx context.Context, platform ContribPlatform) ([]Repository,
 		})
 	}
 
-	sort.SliceStable(repositories, func(i, j int) bool {
-		if repositories[i].StarCount == repositories[j].StarCount {
-			return repositories[i].OwnerName < repositories[j].OwnerName
-		}
-		return repositories[i].StarCount > repositories[j].StarCount
-	})
-
-	return repositories, nil
+	return slices.SortedStableFunc(slices.Values(repositories), func(a, b Repository) int {
+		return cmp.Or(
+			-cmp.Compare(a.StarCount, b.StarCount),
+			cmp.Compare(a.OwnerName, b.OwnerName),
+		)
+	}), nil
 }
 
 // ownRepo returns true if merged to my github.com/alexandear account.
