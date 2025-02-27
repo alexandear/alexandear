@@ -5,6 +5,7 @@
 [![Oleksandr Redko profile views](https://u8views.com/api/v1/github/profiles/3228886/views/day-week-month-total-count.svg)](https://u8views.com/github/alexandear)
 
 I love open source and follow the Boy Scout rule, fixing issues I encounter to help others.
+See [APPRECIATIONS](APPRECIATIONS.md) to view testimonials from OSS community about my [contributions](./CONTRIBUTIONS.md).
 I'm a maintainer of the virtual machine launcher [Lima](https://lima-vm.io/docs/community/governance/#current-maintainers),
 have contributed to the [Go language and tools](./CONTRIBUTIONS.md#google-go-git-repositories),
 linters runner [Golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear),
@@ -14,7 +15,6 @@ OpenAPI generator [oapi-codegen](https://github.com/oapi-codegen/oapi-codegen/co
 and other popular projects.
 
 I'm among the [Top 10](https://github.com/gayanvoice/top-github-users/blob/6bf4f24c9adff7513dd649c1dc4395fc472f2056/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
-See [CONTRIBUTIONS](./CONTRIBUTIONS.md) to view all of my contributions.
 
 <a href="CONTRIBUTIONS.md">
   <img align="center" src="github-metrics.svg" alt="Metrics" width="500">

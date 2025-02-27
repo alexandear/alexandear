@@ -115,6 +115,8 @@ GITHUB_TOKEN=<YOUR_TOKEN> go run .
 
 # Open Source Projects I've Ever Contributed
 
+See also [APPRECIATIONS](./APPRECIATIONS.md) for testimonials about these contributions.
+
 ## Google Go Git Repositories
 
 _links pointed to a log with my contributions_
