@@ -1,5 +1,13 @@
 # List of appreciations from OSS community
 
+## [`lima-vm/lima`](https://github.com/lima-vm/lima/commits?author=alexandear)
+
+From [Akihiro Suda](https://github.com/AkihiroSuda):
+
+> *[Dec 15, 2023](https://github.com/lima-vm/lima/pull/2074#pullrequestreview-1783646055)*
+>
+> Thanks
+
 ## [`google/go-github`](https://github.com/google/go-github/commits?author=alexandear)
 
 From [Glenn Lewis](https://github.com/gmlewis):
@@ -25,6 +33,14 @@ From [Yuki Iwai](https://github.com/tenzen-y):
 >
 > Thank you!
 
+## [`eksctl-io/eksctl`](https://github.com/eksctl-io/eksctl/commits?author=alexandear)
+
+From [Adam Crowder](https://github.com/cheeseandcereal):
+
+> *[Feb 27, 2025](https://github.com/eksctl-io/eksctl/pull/8259#pullrequestreview-2649036082)*
+>
+> Looks great! Thanks for the contribution
+
 ## [`go-delve/delve`](https://github.com/go-delve/delve/commits?author=alexandear)
 
 From [Derek Parker](https://github.com/derekparker):
@@ -48,6 +64,14 @@ From [Carlos Alexandro Becker](https://github.com/caarlos0):
 > *[Nov 26, 2024](https://github.com/goreleaser/goreleaser/pull/5289#issuecomment-2480557658)*
 >
 > thanks!
+
+## [rqlite/rqlite](https://github.com/rqlite/rqlite/commits?author=alexandear)
+
+From [Philip O'Toole](https://github.com/otoolep):
+
+> *[Jan 17, 2025](https://github.com/rqlite/rqlite/pull/2022#issuecomment-2598743209)*
+>
+> Great, thanks for your contribution.
 
 ## [`mgechev/revive`](https://github.com/mgechev/revive/commits?author=alexandear)
 
