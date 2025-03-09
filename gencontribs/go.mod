@@ -5,7 +5,7 @@ go 1.23.0
 require (
 	github.com/google/go-cmp v0.7.0
 	github.com/shurcooL/githubv4 v0.0.0-20240727222349-48295856cce7
-	golang.org/x/oauth2 v0.27.0
+	golang.org/x/oauth2 v0.28.0
 )
 
 require (
