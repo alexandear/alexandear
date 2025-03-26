@@ -22,7 +22,7 @@ I'm among the [Top 10](https://github.com/gayanvoice/top-github-users/blob/6bf4f
 
 #### Developer Hobbies :computer:
 
-- I was a curator for the ["Golang Beginning"](https://prjctr.com/course/golang-beginning) course at the Projector Institute in 2024.
+- I was a curator for the ["Golang Beginning"](https://prjctr-com.translate.goog/course/golang-beginning?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=t) ([UA](https://prjctr.com/course/golang-beginning)) course at the Projector Institute in 2024.
 - I have successfully completed the event for open source [Hacktoberfest](https://hacktoberfest.com) every year from 2016 to 2024.
 - I have participated in [Dev Challenge](https://devchallenge.it/) twice, winning silver in 2019.
 - I have coached at [DjangoGirls](https://djangogirls.org) events in [Kyiv](https://www.facebook.com/djangogirlskyiv/photos/a.1597027043880257/1597028007213494) and [Khmelnytskyi](https://www.facebook.com/uapycon/photos/a.903859323029360/903862623029030) in 2015.
