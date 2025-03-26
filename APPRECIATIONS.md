@@ -1,5 +1,13 @@
 # List of appreciations from OSS community
 
+## [`golangci/golangci-lint`](https://github.com/golangci/golangci-lint/commits?author=alexandear)
+
+From [Ludovic Fernandez](https://github.com/ldez):
+
+> *[Mar 20, 2025](https://github.com/orgs/golangci/discussions/90#discussion-8109221)*
+>
+> First, I'd like to give a big shout-out to @bombsimon, and @alexandear for their reviews of my 40+ PRs ❤️❤️❤️
+
 ## [`lima-vm/lima`](https://github.com/lima-vm/lima/commits?author=alexandear)
 
 From [Akihiro Suda](https://github.com/AkihiroSuda):
