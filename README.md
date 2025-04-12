@@ -6,8 +6,11 @@
 
 I love open source and follow the Boy Scout rule, fixing issues I encounter to help others.
 See [APPRECIATIONS](APPRECIATIONS.md) to view testimonials from OSS community about my [contributions](./CONTRIBUTIONS.md).
-I'm a maintainer of the virtual machine launcher [Lima](https://lima-vm.io/docs/community/governance/#current-maintainers),
-have contributed to the [Go language and tools](./CONTRIBUTIONS.md#google-go-git-repositories),
+
+I'm a maintainer of the virtual machine launcher [Lima](https://lima-vm.io/docs/community/governance/#current-maintainers)
+and the popular Go linter [revive](https://github.com/mgechev/revive/commits?author=alexandear).
+
+Additionally, I have contributed to the [Go language and tools](./CONTRIBUTIONS.md#google-go-git-repositories),
 linters runner [Golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear),
 library for GitHub API [go-github](https://github.com/golangci/golangci-lint/commits?author=alexandear),
 debugger [Delve](https://github.com/go-delve/delve/commits?author=alexandear),
