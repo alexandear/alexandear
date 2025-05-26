@@ -5,10 +5,10 @@
 [![Oleksandr Redko profile views](https://u8views.com/api/v1/github/profiles/3228886/views/day-week-month-total-count.svg)](https://u8views.com/github/alexandear)
 
 I love open source and follow the Boy Scout rule, fixing issues I encounter to help others.
-See [APPRECIATIONS](APPRECIATIONS.md) to view testimonials from OSS community about my [contributions](./CONTRIBUTIONS.md).
+See [APPRECIATIONS](APPRECIATIONS.md) to view testimonials from the OSS community about my [contributions](./CONTRIBUTIONS.md).
 
-I'm a maintainer of the virtual machine launcher [Lima](https://lima-vm.io/docs/community/governance/#current-maintainers)
-and the popular Go linter [revive](https://github.com/mgechev/revive/commits?author=alexandear).
+I'm a maintainer of the popular Go linter [revive](https://github.com/mgechev/revive/commits?author=alexandear)
+and the virtual machine launcher [Lima](https://lima-vm.io/docs/community/governance/#current-maintainers).
 
 Additionally, I have contributed to the [Go language and tools](./CONTRIBUTIONS.md#google-go-git-repositories),
 linters runner [Golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear),
@@ -17,7 +17,7 @@ debugger [Delve](https://github.com/go-delve/delve/commits?author=alexandear),
 OpenAPI generator [oapi-codegen](https://github.com/oapi-codegen/oapi-codegen/commits?author=alexandear),
 and other popular projects.
 
-I'm among the [Top 10](https://github.com/gayanvoice/top-github-users/blob/6bf4f24c9adff7513dd649c1dc4395fc472f2056/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
+I'm among the [Top 15](https://github.com/gayanvoice/top-github-users/blob/20f13c1afe3588236fb8ae5fac11b7b01423e1a6/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
 
 <a href="CONTRIBUTIONS.md">
   <img align="center" src="github-metrics.svg" alt="Metrics" width="500">
