@@ -13,10 +13,9 @@ and a reviewer for the GitHub API library [go-github](https://github.com/google/
 
 I have also contributed to the [Go language and tools](./CONTRIBUTIONS.md#google-go-git-repositories),
 the linter runner [Golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear),
-the GitHub API library [go-github](https://github.com/google/go-github/commits?author=alexandear),
-the debugger [Delve](https://github.com/go-delve/delve/commits?author=alexandear),
-the GraphQL server library [gqlgen](https://github.com/99designs/gqlgen/commits?author=alexandear),
 the release tool [goreleaser](https://github.com/goreleaser/goreleaser/commits?author=alexandear),
+the GraphQL server library [gqlgen](https://github.com/99designs/gqlgen/commits?author=alexandear),
+the debugger [Delve](https://github.com/go-delve/delve/commits?author=alexandear),
 the Kubernetes-native job queueing system [kueue](https://github.com/kubernetes-sigs/kueue/commits?author=alexandear),
 and many other popular projects.
 
