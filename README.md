@@ -7,15 +7,17 @@
 I love open source and follow the Boy Scout rule, fixing issues I encounter to help others.
 See [APPRECIATIONS](APPRECIATIONS.md) to view testimonials from the OSS community about my [contributions](./CONTRIBUTIONS.md).
 
-I'm a maintainer of the popular Go linter [revive](https://github.com/mgechev/revive/commits?author=alexandear)
-and the virtual machine launcher [Lima](https://lima-vm.io/docs/community/governance/#current-maintainers).
+I'm a maintainer of the popular Go linter [revive](https://github.com/mgechev/revive/commits?author=alexandear),
+a reviewer for the virtual machine launcher [Lima](https://lima-vm.io/docs/community/governance/#current-maintainers),
+and a reviewer for the GitHub API library [go-github](https://github.com/google/go-github/blob/HEAD/REVIEWERS).
 
-Additionally, I have contributed to the [Go language and tools](./CONTRIBUTIONS.md#google-go-git-repositories),
-linters runner [Golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear),
-library for GitHub API [go-github](https://github.com/google/go-github/commits?author=alexandear),
-debugger [Delve](https://github.com/go-delve/delve/commits?author=alexandear),
-OpenAPI generator [oapi-codegen](https://github.com/oapi-codegen/oapi-codegen/commits?author=alexandear),
-and other popular projects.
+I have also contributed to the [Go language and tools](./CONTRIBUTIONS.md#google-go-git-repositories),
+the linter runner [Golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear),
+the GitHub API library [go-github](https://github.com/google/go-github/commits?author=alexandear),
+the debugger [Delve](https://github.com/go-delve/delve/commits?author=alexandear),
+the Kubernetes-native job queueing system [kueue](https://github.com/kubernetes-sigs/kueue/commits?author=alexandear),
+the OpenAPI generator [oapi-codegen](https://github.com/oapi-codegen/oapi-codegen/commits?author=alexandear),
+and many other popular projects.
 
 I'm among the [Top 15](https://github.com/gayanvoice/top-github-users/blob/20f13c1afe3588236fb8ae5fac11b7b01423e1a6/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
 
