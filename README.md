@@ -12,7 +12,7 @@ and the virtual machine launcher [Lima](https://lima-vm.io/docs/community/govern
 
 Additionally, I have contributed to the [Go language and tools](./CONTRIBUTIONS.md#google-go-git-repositories),
 linters runner [Golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear),
-library for GitHub API [go-github](https://github.com/golangci/golangci-lint/commits?author=alexandear),
+library for GitHub API [go-github](https://github.com/google/go-github/commits?author=alexandear),
 debugger [Delve](https://github.com/go-delve/delve/commits?author=alexandear),
 OpenAPI generator [oapi-codegen](https://github.com/oapi-codegen/oapi-codegen/commits?author=alexandear),
 and other popular projects.
