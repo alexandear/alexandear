@@ -15,8 +15,9 @@ I have also contributed to the [Go language and tools](./CONTRIBUTIONS.md#google
 the linter runner [Golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear),
 the GitHub API library [go-github](https://github.com/google/go-github/commits?author=alexandear),
 the debugger [Delve](https://github.com/go-delve/delve/commits?author=alexandear),
+the GraphQL server library [gqlgen](https://github.com/99designs/gqlgen/commits?author=alexandear),
+the release tool [goreleaser](https://github.com/goreleaser/goreleaser/commits?author=alexandear),
 the Kubernetes-native job queueing system [kueue](https://github.com/kubernetes-sigs/kueue/commits?author=alexandear),
-the OpenAPI generator [oapi-codegen](https://github.com/oapi-codegen/oapi-codegen/commits?author=alexandear),
 and many other popular projects.
 
 I'm among the [Top 15](https://github.com/gayanvoice/top-github-users/blob/20f13c1afe3588236fb8ae5fac11b7b01423e1a6/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
