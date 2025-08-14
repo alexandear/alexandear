@@ -125,7 +125,7 @@ func TestContributions(t *testing.T) {
 		},
 	}
 
-	repositories, err := Contributions(context.Background(), mock)
+	repositories, err := Contributions(t.Context(), mock)
 	if err != nil {
 		t.Fatalf("Contributions() error = %v", err)
 	}

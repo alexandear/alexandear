@@ -1,6 +1,6 @@
 module github.com/alexandear/alexandear/gencontribs
 
-go 1.23.0
+go 1.25.0
 
 require (
 	github.com/google/go-cmp v0.7.0
@@ -8,7 +8,4 @@ require (
 	golang.org/x/oauth2 v0.30.0
 )
 
-require (
-	github.com/shurcooL/graphql v0.0.0-20220606043923-3cf50f8a0a29 // indirect
-	golang.org/x/net v0.21.0 // indirect
-)
+require github.com/shurcooL/graphql v0.0.0-20230722043721-ed46e5a46466 // indirect
