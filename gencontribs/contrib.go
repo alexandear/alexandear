@@ -46,6 +46,14 @@ var additionalGitHubRepos = []string{
 	"cognitedata/cognite-sdk-python", // https://github.com/cognitedata/cognite-sdk-python/pull/1400
 }
 
+// gitlabRepos holds my contributions to repos located at https://gitlab.com.
+var gitlabRepos = []string{
+	"gitlab-org/gitlab",
+	"gitlab-org/api/client-go",
+	"gitlab-org/cli",
+	"bosi/decorder",
+}
+
 type Repository struct {
 	OwnerName string
 	StarCount int
@@ -168,6 +176,17 @@ _sorted by stars descending_
 `)
 	for _, repo := range repositories {
 		line := fmt.Sprintf("* [%[1]s](https://github.com/%[1]s/commits?author=alexandear)\n", repo.OwnerName)
+		out.WriteString(line)
+	}
+
+	out.WriteString(`
+## GitLab Projects
+
+_links pointed to a log with my merge requests_
+
+`)
+	for _, repo := range gitlabRepos {
+		line := fmt.Sprintf("* [%[1]s](https://gitlab.com/%[1]s/-/merge_requests/?sort=updated_desc&state=all&author_username=alexandear)\n", repo)
 		out.WriteString(line)
 	}
 }
