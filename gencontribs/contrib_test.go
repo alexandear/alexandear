@@ -144,6 +144,15 @@ _sorted by stars descending_
 
 * [golangci/golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear)
 * [lima-vm/lima](https://github.com/lima-vm/lima/commits?author=alexandear)
+
+## GitLab Projects
+
+_links pointed to a log with my merge requests_
+
+* [gitlab-org/gitlab](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/?sort=updated_desc&state=all&author_username=alexandear)
+* [gitlab-org/api/client-go](https://gitlab.com/gitlab-org/api/client-go/-/merge_requests/?sort=updated_desc&state=all&author_username=alexandear)
+* [gitlab-org/cli](https://gitlab.com/gitlab-org/cli/-/merge_requests/?sort=updated_desc&state=all&author_username=alexandear)
+* [bosi/decorder](https://gitlab.com/bosi/decorder/-/merge_requests/?sort=updated_desc&state=all&author_username=alexandear)
 `
 
 	if diff := cmp.Diff(expected, output); diff != "" {
