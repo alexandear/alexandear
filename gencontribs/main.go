@@ -17,7 +17,7 @@ import (
 )
 
 const (
-	genTimeout = 30 * time.Second
+	genTimeout = 2 * time.Minute
 )
 
 func main() {
