@@ -333,7 +333,6 @@ _sorted by stars descending_
 * [vm-devr/strava-telegram-bot](https://github.com/vm-devr/strava-telegram-bot/commits?author=alexandear)
 * [branch-name-generator/branch-name-generator.github.io](https://github.com/branch-name-generator/branch-name-generator.github.io/commits?author=alexandear)
 * [go-critic/go-critic.github.io](https://github.com/go-critic/go-critic.github.io/commits?author=alexandear)
-* [alexandear-org/easyjson](https://github.com/alexandear-org/easyjson/commits?author=alexandear)
 
 ## GitLab Projects
 
