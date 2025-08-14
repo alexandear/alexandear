@@ -61,6 +61,63 @@ func TestContributions(t *testing.T) {
 					Merged: true,
 				},
 			},
+			// Not merged repo
+			{
+				Node: struct {
+					Repository struct {
+						NameWithOwner  githubv4.String
+						StargazerCount githubv4.Int
+					}
+					Merged githubv4.Boolean
+				}{
+					Repository: struct {
+						NameWithOwner  githubv4.String
+						StargazerCount githubv4.Int
+					}{
+						NameWithOwner:  "TortoiseGit/TortoiseGit",
+						StargazerCount: 1_555,
+					},
+					Merged: false,
+				},
+			},
+			// Own owner
+			{
+				Node: struct {
+					Repository struct {
+						NameWithOwner  githubv4.String
+						StargazerCount githubv4.Int
+					}
+					Merged githubv4.Boolean
+				}{
+					Repository: struct {
+						NameWithOwner  githubv4.String
+						StargazerCount githubv4.Int
+					}{
+						NameWithOwner:  "alexandear/alexandear",
+						StargazerCount: 1,
+					},
+					Merged: true,
+				},
+			},
+			// Own org
+			{
+				Node: struct {
+					Repository struct {
+						NameWithOwner  githubv4.String
+						StargazerCount githubv4.Int
+					}
+					Merged githubv4.Boolean
+				}{
+					Repository: struct {
+						NameWithOwner  githubv4.String
+						StargazerCount githubv4.Int
+					}{
+						NameWithOwner:  "alexandear-org/swag",
+						StargazerCount: 1,
+					},
+					Merged: true,
+				},
+			},
 		},
 		starsCount: map[string]int{
 			"lima-vm/lima":           15_965,

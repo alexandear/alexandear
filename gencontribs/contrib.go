@@ -128,7 +128,7 @@ func Contributions(ctx context.Context, platform ContribPlatform) ([]Repository,
 
 // ownRepo returns true if merged to my github.com/alexandear account.
 func ownRepo(ownerName string) bool {
-	return strings.HasPrefix(ownerName, "alexandear/")
+	return strings.HasPrefix(ownerName, "alexandear/") || strings.HasPrefix(ownerName, "alexandear-org/")
 }
 
 // ContributionReport writes the list of repositories to out.
