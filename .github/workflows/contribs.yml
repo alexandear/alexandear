@@ -15,7 +15,7 @@ jobs:
       # Scopes: [pull-requests: read]
       GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - uses: actions/setup-go@v5
         with:
