@@ -1,6 +1,9 @@
 # Oleksandr Redko
 
 [![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://stand-with-ukraine.pp.ua)
+<a href="https://gitranks.com/profile/alexandear">
+    <img src="https://gitranks.com/api/badge/v2/alexandear?ranking=c&context=country&type=position&meta=none&label=Ukraine+Contributor+Rank&cornerStyle=rounded&labelBgColor=%235c5c5c&valueBgColor=%232282c2" alt="Ukraine Contributor Rank" />
+</a>
 
 [![Oleksandr Redko profile views](https://u8views.com/api/v1/github/profiles/3228886/views/day-week-month-total-count.svg)](https://u8views.com/github/alexandear)
 
@@ -18,8 +21,6 @@ the GraphQL server library [gqlgen](https://github.com/99designs/gqlgen/commits?
 the debugger [Delve](https://github.com/go-delve/delve/commits?author=alexandear),
 the Kubernetes-native job queueing system [kueue](https://github.com/kubernetes-sigs/kueue/commits?author=alexandear),
 and many other popular projects.
-
-I'm among the [Top 15](https://github.com/gayanvoice/top-github-users/blob/20f13c1afe3588236fb8ae5fac11b7b01423e1a6/markdown/public_contributions/ukraine.md) most active GitHub users in Ukraine.
 
 <a href="CONTRIBUTIONS.md">
   <img align="center" src="github-metrics.svg" alt="Metrics" width="500">
