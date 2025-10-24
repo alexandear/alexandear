@@ -33,7 +33,7 @@ and many other popular projects.
 - I have participated in [Dev Challenge](https://devchallenge.it/) twice, winning silver in 2019.
 - I have coached at [DjangoGirls](https://djangogirls.org) events in [Kyiv](https://www.facebook.com/djangogirlskyiv/photos/a.1597027043880257/1597028007213494) and [Khmelnytskyi](https://www.facebook.com/uapycon/photos/a.903859323029360/903862623029030) in 2015.
 
-#### Life Hobbies :runner:
+#### Life Hobbies :bicyclist:
 
 - I have enjoyed trail and road running from 2017 until now. I have completed a marathon in an impressive [2:59](https://www.strava.com/activities/2749444073) time for an amateur runner.
 - I am passionate about road, gravel biking, and all kinds of cyclic sports. See my Strava [profile](https://www.strava.com/athletes/alexandear).
