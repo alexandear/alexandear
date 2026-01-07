@@ -1,5 +1,13 @@
 # List of appreciations from OSS community
 
+## [`go101/go101`](https://github.com/go101/go101/pulls?q=sort%3Aupdated-desc+is%3Apr+author%3Aalexandear+is%3Amerged)
+
+From [Tapir Liu](https://github.com/zigo101):
+
+> *[Jan 5, 2026](https://github.com/go101/go101/pull/301#pullrequestreview-3627714367)*
+>
+> Again, many thanks for the fixes.
+
 ## [`golangci/golangci-lint`](https://github.com/golangci/golangci-lint/commits?author=alexandear)
 
 From [Ludovic Fernandez](https://github.com/ldez):
