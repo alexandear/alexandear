@@ -36,7 +36,12 @@ func main() {
 	client := githubv4.NewClient(httpClient)
 	gh := &GitHub{client: client}
 
-	repositories, err := Contributions(ctx, gh)
+	top100, err := NewGoTop100()
+	if err != nil {
+		log.Panicf("Load Go top 100: %v\n", err)
+	}
+
+	repositories, err := Contributions(ctx, gh, top100)
 	if err != nil {
 		log.Panicf("Get contributions: %v\n", err)
 	}

@@ -21,6 +21,7 @@ type EdgePullRequest struct {
 		Repository struct {
 			NameWithOwner  githubv4.String
 			StargazerCount githubv4.Int
+			GoModContent   githubv4.String
 		}
 		Merged githubv4.Boolean
 	}
@@ -41,7 +42,20 @@ func (gh *GitHub) PullRequests(ctx context.Context) ([]EdgePullRequest, error) {
 						HasNextPage bool
 					}
 					TotalCount githubv4.Int
-					Edges      []EdgePullRequest
+					Edges      []struct {
+						Node struct {
+							Repository struct {
+								NameWithOwner  githubv4.String
+								StargazerCount githubv4.Int
+								Object         struct {
+									Blob struct {
+										Text githubv4.String
+									} `graphql:"... on Blob"`
+								} `graphql:"object(expression: \"HEAD:go.mod\")"`
+							}
+							Merged githubv4.Boolean
+						}
+					}
 				} `graphql:"pullRequests(states: [MERGED, CLOSED], orderBy:{field: CREATED_AT, direction: ASC}, first:100, after: $after)"`
 			}
 		}
@@ -49,7 +63,31 @@ func (gh *GitHub) PullRequests(ctx context.Context) ([]EdgePullRequest, error) {
 		if err := gh.client.Query(ctx, &queryPullRequest, variables); err != nil {
 			return nil, fmt.Errorf("query: %w", err)
 		}
-		pullRequests = append(pullRequests, queryPullRequest.Viewer.PullRequests.Edges...)
+
+		for _, edge := range queryPullRequest.Viewer.PullRequests.Edges {
+			pullRequests = append(pullRequests, EdgePullRequest{
+				Node: struct {
+					Repository struct {
+						NameWithOwner  githubv4.String
+						StargazerCount githubv4.Int
+						GoModContent   githubv4.String
+					}
+					Merged githubv4.Boolean
+				}{
+					Repository: struct {
+						NameWithOwner  githubv4.String
+						StargazerCount githubv4.Int
+						GoModContent   githubv4.String
+					}{
+						NameWithOwner:  edge.Node.Repository.NameWithOwner,
+						StargazerCount: edge.Node.Repository.StargazerCount,
+						GoModContent:   edge.Node.Repository.Object.Blob.Text,
+					},
+					Merged: edge.Node.Merged,
+				},
+			})
+		}
+
 		if !queryPullRequest.Viewer.PullRequests.PageInfo.HasNextPage {
 			break
 		}

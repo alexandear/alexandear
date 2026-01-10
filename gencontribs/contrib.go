@@ -7,6 +7,7 @@ import (
 	"io"
 	"log"
 	"slices"
+	"strconv"
 	"strings"
 )
 
@@ -57,6 +58,9 @@ var gitlabRepos = []string{
 type Repository struct {
 	OwnerName string
 	StarCount int
+
+	GoModule        string
+	PlaceInGoTop100 int
 }
 
 type ContribPlatform interface {
@@ -64,14 +68,23 @@ type ContribPlatform interface {
 	RepositoryStarsCount(ctx context.Context, ownerName string) (int, error)
 }
 
-func Contributions(ctx context.Context, platform ContribPlatform) ([]Repository, error) {
+type GoTop100 interface {
+	Place(moduleName string) int
+}
+
+func Contributions(ctx context.Context, platform ContribPlatform, top100 GoTop100) ([]Repository, error) {
 	allPullRequests, err := platform.PullRequests(ctx)
 	if err != nil {
 		return nil, fmt.Errorf("get merged pull requests: %w", err)
 	}
 	log.Printf("Total pull request: %d\n", len(allPullRequests))
 
-	repositoryStars := map[string]int{}
+	type starredRepo struct {
+		starCount int
+		goModule  string
+	}
+
+	starredRepositories := map[string]starredRepo{}
 	for _, pr := range allPullRequests {
 		ownerName := string(pr.Node.Repository.NameWithOwner)
 		if ownRepo(ownerName) {
@@ -83,23 +96,28 @@ func Contributions(ctx context.Context, platform ContribPlatform) ([]Repository,
 			continue
 		}
 
-		repositoryStars[ownerName] = int(pr.Node.Repository.StargazerCount)
+		starredRepositories[ownerName] = starredRepo{
+			starCount: int(pr.Node.Repository.StargazerCount),
+			goModule:  extractGoModuleName(string(pr.Node.Repository.GoModContent)),
+		}
 	}
 
-	getStarsCount := func(ownerName string) int {
+	getStarsCount := func(ownerName string) starredRepo {
 		starsCount, err := platform.RepositoryStarsCount(ctx, ownerName)
 		if err != nil {
 			log.Printf("Failed to get repository %q stars: %v", ownerName, err)
-			return 1000
+			starsCount = 1000
 		}
-		return starsCount
+		return starredRepo{
+			starCount: starsCount,
+		}
 	}
 
 	fillGoogleStarsCount := func(googleRepos []googleSourceGitHub) {
 		for _, googleGithub := range googleRepos {
 			ownerName := googleGithub.GitHubOwnerName
 			getStarsCount(ownerName)
-			repositoryStars[ownerName] = getStarsCount(ownerName)
+			starredRepositories[ownerName] = getStarsCount(ownerName)
 		}
 	}
 
@@ -107,14 +125,16 @@ func Contributions(ctx context.Context, platform ContribPlatform) ([]Repository,
 	fillGoogleStarsCount(googleCodeGitHubRepos)
 
 	for _, ownerName := range additionalGitHubRepos {
-		repositoryStars[ownerName] = getStarsCount(ownerName)
+		starredRepositories[ownerName] = getStarsCount(ownerName)
 	}
 
-	repositories := make([]Repository, 0, len(repositoryStars))
-	for ownerName, star := range repositoryStars {
+	repositories := make([]Repository, 0, len(starredRepositories))
+	for ownerName, repo := range starredRepositories {
 		repositories = append(repositories, Repository{
-			OwnerName: ownerName,
-			StarCount: star,
+			OwnerName:       ownerName,
+			StarCount:       repo.starCount,
+			GoModule:        repo.goModule,
+			PlaceInGoTop100: top100.Place(repo.goModule),
 		})
 	}
 
@@ -129,6 +149,22 @@ func Contributions(ctx context.Context, platform ContribPlatform) ([]Repository,
 // ownRepo returns true if merged to my github.com/alexandear account.
 func ownRepo(ownerName string) bool {
 	return strings.HasPrefix(ownerName, "alexandear/") || strings.HasPrefix(ownerName, "alexandear-org/")
+}
+
+// extractGoModuleName extracts the module name from go.mod content.
+func extractGoModuleName(goModContent string) string {
+	for line := range strings.Lines(goModContent) {
+		module, ok := strings.CutPrefix(strings.TrimSpace(line), "module")
+		if ok {
+			module = strings.TrimSpace(module)
+			if module == "github.com/YOUR-USER-OR-ORG-NAME/YOUR-REPO-NAME" {
+				// special case for https://github.com/golang-standards/projec-layout/blob/HEAD/go.mod#L1
+				return ""
+			}
+			return module
+		}
+	}
+	return ""
 }
 
 // ContributionReport writes the list of repositories to out.
@@ -171,11 +207,16 @@ _links pointed to a log with my contributions_
 	out.WriteString(`
 ## GitHub Projects
 
-_sorted by stars descending_
-
+| Project | Stars | Go Module | [Place in Go Top 100](https://blog.thibaut-rousseau.com/blog/the-most-popular-go-dependency-is/) |
+|---------|-------|-----------|--------------------------------------------------------------------------------------------------|
 `)
 	for _, repo := range repositories {
-		line := fmt.Sprintf("* [%[1]s](https://github.com/%[1]s/commits?author=alexandear)\n", repo.OwnerName)
+		var place string
+		if repo.PlaceInGoTop100 > 0 {
+			place = strconv.Itoa(repo.PlaceInGoTop100)
+		}
+		line := fmt.Sprintf("| [%[1]s](https://github.com/%[1]s/commits?author=alexandear) | %d | [%[3]s](https://pkg.go.dev/%[3]s) | %s |\n",
+			repo.OwnerName, repo.StarCount, repo.GoModule, place)
 		out.WriteString(line)
 	}
 
