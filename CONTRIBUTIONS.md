@@ -59,7 +59,7 @@ _links pointed to a log with my contributions_
 | [spf13/viper](https://github.com/spf13/viper/commits?author=alexandear) | 29816 | [github.com/spf13/viper](https://pkg.go.dev/github.com/spf13/viper) | 10 |
 | [SagerNet/sing-box](https://github.com/SagerNet/sing-box/commits?author=alexandear) | 29556 | [github.com/sagernet/sing-box](https://pkg.go.dev/github.com/sagernet/sing-box) |  |
 | [swagger-api/swagger-ui](https://github.com/swagger-api/swagger-ui/commits?author=alexandear) | 28509 | [](https://pkg.go.dev/) |  |
-| [tw93/Mole](https://github.com/tw93/Mole/commits?author=alexandear) | 27777 | [github.com/tw93/mole](https://pkg.go.dev/github.com/tw93/mole) |  |
+| [tw93/Mole](https://github.com/tw93/Mole/commits?author=alexandear) | 27778 | [github.com/tw93/mole](https://pkg.go.dev/github.com/tw93/mole) |  |
 | [zyedidia/micro](https://github.com/zyedidia/micro/commits?author=alexandear) | 27637 | [github.com/zyedidia/micro/v2](https://pkg.go.dev/github.com/zyedidia/micro/v2) |  |
 | [notepad-plus-plus/notepad-plus-plus](https://github.com/notepad-plus-plus/notepad-plus-plus/commits?author=alexandear) | 26675 | [](https://pkg.go.dev/) |  |
 | [abiosoft/colima](https://github.com/abiosoft/colima/commits?author=alexandear) | 26232 | [github.com/abiosoft/colima](https://pkg.go.dev/github.com/abiosoft/colima) |  |
@@ -73,7 +73,7 @@ _links pointed to a log with my contributions_
 | [valyala/fasthttp](https://github.com/valyala/fasthttp/commits?author=alexandear) | 23195 | [github.com/valyala/fasthttp](https://pkg.go.dev/github.com/valyala/fasthttp) |  |
 | [grpc/grpc-go](https://github.com/grpc/grpc-go/commits?author=alexandear) | 22703 | [google.golang.org/grpc](https://pkg.go.dev/google.golang.org/grpc) | 4 |
 | [air-verse/air](https://github.com/air-verse/air/commits?author=alexandear) | 22660 | [github.com/air-verse/air](https://pkg.go.dev/github.com/air-verse/air) |  |
-| [go-chi/chi](https://github.com/go-chi/chi/commits?author=alexandear) | 21320 | [github.com/go-chi/chi/v5](https://pkg.go.dev/github.com/go-chi/chi/v5) | 69 |
+| [go-chi/chi](https://github.com/go-chi/chi/commits?author=alexandear) | 21321 | [github.com/go-chi/chi/v5](https://pkg.go.dev/github.com/go-chi/chi/v5) | 69 |
 | [samber/lo](https://github.com/samber/lo/commits?author=alexandear) | 20834 | [github.com/samber/lo](https://pkg.go.dev/github.com/samber/lo) |  |
 | [renovatebot/renovate](https://github.com/renovatebot/renovate/commits?author=alexandear) | 20539 | [](https://pkg.go.dev/) |  |
 | [lima-vm/lima](https://github.com/lima-vm/lima/commits?author=alexandear) | 19933 | [github.com/lima-vm/lima/v2](https://pkg.go.dev/github.com/lima-vm/lima/v2) |  |
