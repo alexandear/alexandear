@@ -33,6 +33,14 @@ From [Glenn Lewis](https://github.com/gmlewis):
 > Thank you, @alexandear !
 > Merging.
 
+## [`gitlab-org/api/client-go`](https://gitlab.com/gitlab-org/api/client-go/-/merge_requests/?sort=created_date&state=merged&author_username=alexandear)
+
+From [Patrick Rice](https://gitlab.com/PatrickRice):
+
+> *[Nov 26, 2024](https://gitlab.com/gitlab-org/api/client-go/-/merge_requests/2068#note_2251044725)*
+>
+> Thanks @alexandear , merging! 🎉
+
 ## [`99designs/gqlgen`](https://github.com/99designs/gqlgen/commits?author=alexandear)
 
 From [Steve Coffman](https://github.com/StevenACoffman):
