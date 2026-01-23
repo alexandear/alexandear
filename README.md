@@ -8,13 +8,14 @@
 [![Oleksandr Redko profile views](https://u8views.com/api/v1/github/profiles/3228886/views/day-week-month-total-count.svg)](https://u8views.com/github/alexandear)
 
 I love open source and follow the Boy Scout rule, fixing issues I encounter to help others.
-See [APPRECIATIONS](APPRECIATIONS.md) to view testimonials from the OSS community about my [contributions](./CONTRIBUTIONS.md).
+See [APPRECIATIONS](APPRECIATIONS.md) to view testimonials from the community about my [contributions](./CONTRIBUTIONS.md).
 
 I'm a maintainer of the popular Go linter [revive](https://github.com/mgechev/revive/commits?author=alexandear),
-a reviewer for the virtual machine launcher [Lima](https://lima-vm.io/docs/community/governance/#current-maintainers),
-and a reviewer for the GitHub API library [go-github](https://github.com/google/go-github/blob/HEAD/REVIEWERS).
+a reviewer for the GitHub API library [go-github](https://github.com/google/go-github/blob/HEAD/REVIEWERS),
+and a reviewer for the virtual machine launcher [Lima](https://lima-vm.io/docs/community/governance/#current-maintainers).
 
 I have also contributed to the [Go language and tools](./CONTRIBUTIONS.md#google-go-git-repositories),
+the GitLab API library [client-go](https://gitlab.com/gitlab-org/api/client-go/-/merge_requests/?sort=updated_desc&state=all&author_username=alexandear),
 the linter runner [Golangci-lint](https://github.com/golangci/golangci-lint/commits?author=alexandear),
 the release tool [goreleaser](https://github.com/goreleaser/goreleaser/commits?author=alexandear),
 the GraphQL server library [gqlgen](https://github.com/99designs/gqlgen/commits?author=alexandear),
@@ -28,8 +29,8 @@ and many other popular projects.
 
 #### Developer Hobbies :computer:
 
-- I have successfully completed the event for open source [Hacktoberfest](https://hacktoberfest.com) every year from 2016 to 2025, see [badges](https://holopin.io/@alexandear).
-- I was a curator for the "Golang Beginning" ([archived](https://web.archive.org/web/20250322130107/https://prjctr.com/course/golang-beginning)) course at the Projector Institute in 2024.
+- I have completed the event for open source [Hacktoberfest](https://hacktoberfest.com) every year from 2016 to 2025, see my [badges](https://holopin.io/@alexandear).
+- I was a curator for the "Golang Beginning" course ([archived](https://web.archive.org/web/20250322130107/https://prjctr.com/course/golang-beginning)) at the Projector Institute in 2024.
 - I have participated in [Dev Challenge](https://devchallenge.it/) twice, winning silver in 2019.
 - I have coached at [DjangoGirls](https://djangogirls.org) events in [Kyiv](https://www.facebook.com/djangogirlskyiv/photos/a.1597027043880257/1597028007213494) and [Khmelnytskyi](https://www.facebook.com/uapycon/photos/a.903859323029360/903862623029030) in 2015.
 
