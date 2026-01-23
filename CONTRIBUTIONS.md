@@ -35,10 +35,10 @@ _links pointed to a log with my contributions_
 | Project | Stars | Go Module | [Place in Go Top 100](https://blog.thibaut-rousseau.com/blog/the-most-popular-go-dependency-is/) |
 |---------|-------|-----------|--------------------------------------------------------------------------------------------------|
 | [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp/commits?author=alexandear) | 436215 | [](https://pkg.go.dev/) |  |
-| [EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books/commits?author=alexandear) | 380935 | [](https://pkg.go.dev/) |  |
+| [EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books/commits?author=alexandear) | 380936 | [](https://pkg.go.dev/) |  |
 | [kamranahmedse/developer-roadmap](https://github.com/kamranahmedse/developer-roadmap/commits?author=alexandear) | 347793 | [](https://pkg.go.dev/) |  |
 | [avelino/awesome-go](https://github.com/avelino/awesome-go/commits?author=alexandear) | 163233 | [github.com/avelino/awesome-go](https://pkg.go.dev/github.com/avelino/awesome-go) |  |
-| [golang/go](https://github.com/golang/go/commits?author=alexandear) | 132076 | [](https://pkg.go.dev/) |  |
+| [golang/go](https://github.com/golang/go/commits?author=alexandear) | 132077 | [](https://pkg.go.dev/) |  |
 | [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes/commits?author=alexandear) | 120008 | [k8s.io/kubernetes](https://pkg.go.dev/k8s.io/kubernetes) |  |
 | [gohugoio/hugo](https://github.com/gohugoio/hugo/commits?author=alexandear) | 86210 | [github.com/gohugoio/hugo](https://pkg.go.dev/github.com/gohugoio/hugo) |  |
 | [prometheus/prometheus](https://github.com/prometheus/prometheus/commits?author=alexandear) | 62344 | [github.com/prometheus/prometheus](https://pkg.go.dev/github.com/prometheus/prometheus) |  |
@@ -47,7 +47,7 @@ _links pointed to a log with my contributions_
 | [go-gitea/gitea](https://github.com/go-gitea/gitea/commits?author=alexandear) | 53327 | [code.gitea.io/gitea](https://pkg.go.dev/code.gitea.io/gitea) |  |
 | [wagoodman/dive](https://github.com/wagoodman/dive/commits?author=alexandear) | 53185 | [github.com/wagoodman/dive](https://pkg.go.dev/github.com/wagoodman/dive) |  |
 | [etcd-io/etcd](https://github.com/etcd-io/etcd/commits?author=alexandear) | 51385 | [go.etcd.io/etcd/v3](https://pkg.go.dev/go.etcd.io/etcd/v3) |  |
-| [daytonaio/daytona](https://github.com/daytonaio/daytona/commits?author=alexandear) | 49581 | [](https://pkg.go.dev/) |  |
+| [daytonaio/daytona](https://github.com/daytonaio/daytona/commits?author=alexandear) | 49583 | [](https://pkg.go.dev/) |  |
 | [apache/airflow](https://github.com/apache/airflow/commits?author=alexandear) | 43972 | [](https://pkg.go.dev/) |  |
 | [siyuan-note/siyuan](https://github.com/siyuan-note/siyuan/commits?author=alexandear) | 40807 | [](https://pkg.go.dev/) |  |
 | [photoprism/photoprism](https://github.com/photoprism/photoprism/commits?author=alexandear) | 39137 | [github.com/photoprism/photoprism](https://pkg.go.dev/github.com/photoprism/photoprism) |  |
@@ -55,7 +55,7 @@ _links pointed to a log with my contributions_
 | [istio/istio](https://github.com/istio/istio/commits?author=alexandear) | 37853 | [istio.io/istio](https://pkg.go.dev/istio.io/istio) |  |
 | [pcottle/learnGitBranching](https://github.com/pcottle/learnGitBranching/commits?author=alexandear) | 33064 | [](https://pkg.go.dev/) |  |
 | [beego/beego](https://github.com/beego/beego/commits?author=alexandear) | 32400 | [github.com/beego/beego/v2](https://pkg.go.dev/github.com/beego/beego/v2) |  |
-| [tw93/Mole](https://github.com/tw93/Mole/commits?author=alexandear) | 31320 | [github.com/tw93/mole](https://pkg.go.dev/github.com/tw93/mole) |  |
+| [tw93/Mole](https://github.com/tw93/Mole/commits?author=alexandear) | 31322 | [github.com/tw93/mole](https://pkg.go.dev/github.com/tw93/mole) |  |
 | [containers/podman](https://github.com/containers/podman/commits?author=alexandear) | 30432 | [github.com/containers/podman/v6](https://pkg.go.dev/github.com/containers/podman/v6) |  |
 | [SagerNet/sing-box](https://github.com/SagerNet/sing-box/commits?author=alexandear) | 29922 | [github.com/sagernet/sing-box](https://pkg.go.dev/github.com/sagernet/sing-box) |  |
 | [spf13/viper](https://github.com/spf13/viper/commits?author=alexandear) | 29882 | [github.com/spf13/viper](https://pkg.go.dev/github.com/spf13/viper) | 10 |
@@ -66,7 +66,7 @@ _links pointed to a log with my contributions_
 | [github/github-mcp-server](https://github.com/github/github-mcp-server/commits?author=alexandear) | 26210 | [github.com/github/github-mcp-server](https://pkg.go.dev/github.com/github/github-mcp-server) |  |
 | [stretchr/testify](https://github.com/stretchr/testify/commits?author=alexandear) | 25702 | [github.com/stretchr/testify](https://pkg.go.dev/github.com/stretchr/testify) | 1 |
 | [kataras/iris](https://github.com/kataras/iris/commits?author=alexandear) | 25626 | [github.com/kataras/iris/v12](https://pkg.go.dev/github.com/kataras/iris/v12) |  |
-| [gitleaks/gitleaks](https://github.com/gitleaks/gitleaks/commits?author=alexandear) | 24670 | [github.com/zricethezav/gitleaks/v8](https://pkg.go.dev/github.com/zricethezav/gitleaks/v8) |  |
+| [gitleaks/gitleaks](https://github.com/gitleaks/gitleaks/commits?author=alexandear) | 24671 | [github.com/zricethezav/gitleaks/v8](https://pkg.go.dev/github.com/zricethezav/gitleaks/v8) |  |
 | [go-delve/delve](https://github.com/go-delve/delve/commits?author=alexandear) | 24553 | [github.com/go-delve/delve](https://pkg.go.dev/github.com/go-delve/delve) |  |
 | [trufflesecurity/trufflehog](https://github.com/trufflesecurity/trufflehog/commits?author=alexandear) | 24206 | [github.com/trufflesecurity/trufflehog/v3](https://pkg.go.dev/github.com/trufflesecurity/trufflehog/v3) |  |
 | [microsoft/typescript-go](https://github.com/microsoft/typescript-go/commits?author=alexandear) | 23831 | [github.com/microsoft/typescript-go](https://pkg.go.dev/github.com/microsoft/typescript-go) |  |
@@ -100,10 +100,10 @@ _links pointed to a log with my contributions_
 | [IBM/sarama](https://github.com/IBM/sarama/commits?author=alexandear) | 12396 | [github.com/IBM/sarama](https://pkg.go.dev/github.com/IBM/sarama) |  |
 | [future-architect/vuls](https://github.com/future-architect/vuls/commits?author=alexandear) | 12017 | [github.com/future-architect/vuls](https://pkg.go.dev/github.com/future-architect/vuls) |  |
 | [go-resty/resty](https://github.com/go-resty/resty/commits?author=alexandear) | 11489 | [resty.dev/v3](https://pkg.go.dev/resty.dev/v3) |  |
-| [pranshuparmar/witr](https://github.com/pranshuparmar/witr/commits?author=alexandear) | 11324 | [github.com/pranshuparmar/witr](https://pkg.go.dev/github.com/pranshuparmar/witr) |  |
+| [pranshuparmar/witr](https://github.com/pranshuparmar/witr/commits?author=alexandear) | 11325 | [github.com/pranshuparmar/witr](https://pkg.go.dev/github.com/pranshuparmar/witr) |  |
 | [encoredev/encore](https://github.com/encoredev/encore/commits?author=alexandear) | 11314 | [encr.dev](https://pkg.go.dev/encr.dev) |  |
 | [google/go-github](https://github.com/google/go-github/commits?author=alexandear) | 11082 | [github.com/google/go-github/v81](https://pkg.go.dev/github.com/google/go-github/v81) |  |
-| [99designs/gqlgen](https://github.com/99designs/gqlgen/commits?author=alexandear) | 10643 | [github.com/99designs/gqlgen](https://pkg.go.dev/github.com/99designs/gqlgen) |  |
+| [99designs/gqlgen](https://github.com/99designs/gqlgen/commits?author=alexandear) | 10644 | [github.com/99designs/gqlgen](https://pkg.go.dev/github.com/99designs/gqlgen) |  |
 | [dexidp/dex](https://github.com/dexidp/dex/commits?author=alexandear) | 10525 | [github.com/dexidp/dex](https://pkg.go.dev/github.com/dexidp/dex) |  |
 | [sashabaranov/go-openai](https://github.com/sashabaranov/go-openai/commits?author=alexandear) | 10517 | [github.com/sashabaranov/go-openai](https://pkg.go.dev/github.com/sashabaranov/go-openai) |  |
 | [awsdocs/aws-doc-sdk-examples](https://github.com/awsdocs/aws-doc-sdk-examples/commits?author=alexandear) | 10344 | [](https://pkg.go.dev/) |  |
