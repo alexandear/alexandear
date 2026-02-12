@@ -30,7 +30,7 @@ and many other popular projects.
 #### Developer Hobbies :computer:
 
 - I have completed the event for open source [Hacktoberfest](https://hacktoberfest.com) every year from 2016 to 2025, see my [badges](https://holopin.io/@alexandear).
-- I was a curator for the "Golang Beginning" course ([archived](https://web.archive.org/web/20250322130107/https://prjctr.com/course/golang-beginning)) at the Projector Institute in 2024.
+- I was a [tutor](https://prjctr.com/tutors/oleksandr-redko) for the "Golang Beginning" course ([archived](https://web.archive.org/web/20250322130107/https://prjctr.com/course/golang-beginning)) at the Projector Institute in 2024.
 - I have participated in [Dev Challenge](https://devchallenge.it/) twice, winning silver in 2019.
 - I have coached at [DjangoGirls](https://djangogirls.org) events in [Kyiv](https://www.facebook.com/djangogirlskyiv/photos/a.1597027043880257/1597028007213494) and [Khmelnytskyi](https://www.facebook.com/uapycon/photos/a.903859323029360/903862623029030) in 2015.
 
