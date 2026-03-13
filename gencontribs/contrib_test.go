@@ -214,6 +214,10 @@ GITHUB_TOKEN=<YOUR_TOKEN> go run .
 
 # Open Source Projects I've Ever Contributed
 
+<a href="CONTRIBUTIONS.md">
+  <img align="center" src="github-metrics.svg" alt="Metrics" width="500">
+</a>
+
 See also [APPRECIATIONS](./APPRECIATIONS.md) for testimonials about these contributions.
 
 ## Google Go Git Repositories

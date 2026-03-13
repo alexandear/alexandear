@@ -23,10 +23,6 @@ the debugger [Delve](https://github.com/go-delve/delve/commits?author=alexandear
 the Kubernetes-native job queueing system [kueue](https://github.com/kubernetes-sigs/kueue/commits?author=alexandear),
 and many other popular projects.
 
-<a href="CONTRIBUTIONS.md">
-  <img align="center" src="github-metrics.svg" alt="Metrics" width="500">
-</a>
-
 #### Developer Hobbies :computer:
 
 - I have completed the event for open source [Hacktoberfest](https://hacktoberfest.com) every year from 2016 to 2025, see my [badges](https://holopin.io/@alexandear).
