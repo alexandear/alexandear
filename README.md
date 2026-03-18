@@ -11,8 +11,9 @@ I love open source and follow the Boy Scout rule, fixing issues I encounter to h
 See [APPRECIATIONS](APPRECIATIONS.md) to view testimonials from the community about my [contributions](./CONTRIBUTIONS.md).
 
 I'm a maintainer of the popular Go linter [revive](https://github.com/mgechev/revive/commits?author=alexandear),
-a reviewer for the GitHub API library [go-github](https://github.com/google/go-github/blob/HEAD/REVIEWERS),
-and a reviewer for the virtual machine launcher [Lima](https://lima-vm.io/docs/community/governance/#current-maintainers).
+a member of the [Kubernetes SIGs](https://github.com/kubernetes-sigs) organization,
+and a reviewer for the GitHub API library [go-github](https://github.com/google/go-github/blob/HEAD/REVIEWERS)
+and the virtual machine launcher [Lima](https://lima-vm.io/docs/community/governance/#current-maintainers).
 
 I have also contributed to the [Go language and tools](./CONTRIBUTIONS.md#google-go-git-repositories),
 the GitLab API library [client-go](https://gitlab.com/gitlab-org/api/client-go/-/merge_requests/?sort=updated_desc&state=all&author_username=alexandear),
